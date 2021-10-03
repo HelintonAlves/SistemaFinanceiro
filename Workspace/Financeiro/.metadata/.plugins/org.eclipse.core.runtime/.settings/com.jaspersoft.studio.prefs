@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+jssbranding_product_mainbundle=com.jaspersoft.studio
+jssbranding_product_name=Jaspersoft Studio plug-in
+jssbranding_product_version=6.6.0.final
+net.sf.jasperreports.JRPROPERTIES=net.sf.jasperreports.web.resource.pattern.customvisualization.scripts\=com/jaspersoft/jasperreports/customvisualization/resources/require/.*\ncom.jaspersoft.jasperreports.components.customvisualization.require.js\=file\\\:/C\\\:/Users/helin/OneDrive/Ambiente de Trabalho/Sistema Financeiro/IDE/eclipse/configuration/org.eclipse.osgi/1355/0/.cp/resources/scripts/require-2.1.6.src.js\nnet.sf.jasperreports.compiler.temp.dir\=C\\\:\\\\Users\\\\helin\\\\OneDrive\\\\Ambiente de Trabalho\\\\Sistema Financeiro\\\\IDE\\\\eclipse\nnet.sf.jasperreports.compiler.classpath\=C\\\:\\\\Users\\\\helin\\\\OneDrive\\\\Ambiente de Trabalho\\\\Sistema Financeiro\\\\IDE\\\\eclipse\\\\\\\\plugins/org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar\n

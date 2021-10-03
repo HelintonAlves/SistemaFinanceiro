@@ -1,0 +1,559 @@
+1 - TABELA ESTADO
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@SuppressWarnings("serial")
+@Entity
+public class Estado extends GenericDomain {
+	@Column(length = 2, nullable = false)
+	private String sigla;
+	
+	@Column(length = 50, nullable = false)
+	private String nome;
+
+	public String getSigla() {
+		return sigla;
+	}
+
+	public void setSigla(String sigla) {
+		this.sigla = sigla;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+}
+
+
+2 - TABELA CIDADE
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@SuppressWarnings("serial")
+@Entity
+public class Cidade extends GenericDomain {
+	@Column(length = 50, nullable = false)
+	private String nome;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Estado estado;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Estado getEstado() {
+		return estado;
+	}
+
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
+}
+
+
+3 - TABELA PRODUTOS
+
+
+import java.math.BigDecimal;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@SuppressWarnings("serial")
+@Entity
+public class Produto extends GenericDomain {
+	@Column(length = 80, nullable = false)
+	private String descricao;
+	
+	@Column(nullable = false)
+	private Short quantidade;
+	
+	@Column(nullable = false, precision = 6, scale = 2)
+	private BigDecimal preco;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Fornecedor fornecedor;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public Short getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Short quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
+
+	public Fornecedor getFabricante() {
+		return fornecedor;
+	}
+
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+}
+
+
+4 - TABELA FORNECEDOR
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@SuppressWarnings("serial")
+@Entity
+public class Fornecedor extends GenericDomain {
+	@Column(length = 50, nullable = false)
+	private String descricao;
+	
+	public String getDescricao() {
+		return descricao;
+	}
+	
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+}
+
+
+
+5 - TABELA CLIENTE
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@SuppressWarnings("serial")
+@Entity
+public class Cliente extends GenericDomain {
+	@Column(nullable = false)
+	@Temporal(TemporalType.DATE)
+	private Date dataCadastro;
+	
+	@Column(nullable = false)
+	private Boolean liberado;
+	
+	@OneToOne
+	@JoinColumn(nullable = false)
+	private Pessoa pessoa;
+
+	public Date getDataCadastro() {
+		return dataCadastro;
+	}
+
+	public void setDataCadastro(Date dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+
+	public Boolean getLiberado() {
+		return liberado;
+	}
+
+	public void setLiberado(Boolean liberado) {
+		this.liberado = liberado;
+	}
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+}
+
+
+6 - TABELA USUARIO
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+@SuppressWarnings("serial")
+@Entity
+public class Usuario extends GenericDomain {
+	@Column(length = 32, nullable = false)
+	private String senha;
+	
+	@Column(nullable = false)
+	private Character tipo;
+	
+	@Column(nullable = false)
+	private Boolean ativo;
+	
+	@OneToOne
+	@JoinColumn(nullable = false)
+	private Pessoa pessoa;
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public Character getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(Character tipo) {
+		this.tipo = tipo;
+	}
+
+	public Boolean getAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(Boolean ativo) {
+		this.ativo = ativo;
+	}
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+}
+
+
+
+7 - TABELA VENDA
+
+import java.math.BigDecimal;
+import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@SuppressWarnings("serial")
+@Entity
+public class Venda extends GenericDomain {
+	@Column(nullable = false)
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date horario;
+	
+	@Column(nullable = false, precision = 7, scale = 2)
+	private BigDecimal precoTotal;
+	
+	@ManyToOne
+	private Cliente cliente;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Funcionario funcionario;
+
+	public Date getHorario() {
+		return horario;
+	}
+
+	public void setHorario(Date horario) {
+		this.horario = horario;
+	}
+
+	public BigDecimal getPrecoTotal() {
+		return precoTotal;
+	}
+
+	public void setPrecoTotal(BigDecimal precoTotal) {
+		this.precoTotal = precoTotal;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}
+
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
+}
+
+
+8 - TABELA FUNCIONARIO
+
+
+import java.util.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@SuppressWarnings("serial")
+@Entity
+public class Funcionario extends GenericDomain {
+	@Column(length = 15, nullable = false)
+	private String carteiraTrabalho;
+	
+	@Column(nullable = false)
+	@Temporal(TemporalType.DATE)
+	private Date dataAdmissao;
+	
+	@OneToOne
+	@JoinColumn(nullable = false)
+	private Pessoa pessoa;
+
+	public String getCarteiraTrabalho() {
+		return carteiraTrabalho;
+	}
+
+	public void setCarteiraTrabalho(String carteiraTrabalho) {
+		this.carteiraTrabalho = carteiraTrabalho;
+	}
+
+	public Date getDataAdmissao() {
+		return dataAdmissao;
+	}
+
+	public void setDataAdmissao(Date dataAdmissao) {
+		this.dataAdmissao = dataAdmissao;
+	}
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+}
+
+
+9 - TABELA ITEMVENDA
+
+import java.math.BigDecimal;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+
+@Entity
+public class ItemVenda extends GenericDomain {
+	@Column(nullable = false)
+	private Short quantidade;
+	
+	@Column(nullable = false, precision = 7, scale = 2)
+	private BigDecimal precoParcial;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Produto produto;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Venda venda;
+
+	public Short getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Short quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public BigDecimal getPrecoParcial() {
+		return precoParcial;
+	}
+
+	public void setPrecoParcial(BigDecimal precoParcial) {
+		this.precoParcial = precoParcial;
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+
+	public Venda getVenda() {
+		return venda;
+	}
+	
+	public void setVenda(Venda venda) {
+		this.venda = venda;
+	}
+}
+
+
+10 - TABELA PESSOA
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+
+@SuppressWarnings("serial")
+@Entity
+public class Pessoa extends GenericDomain {
+	@Column(length = 50, nullable = false)
+	private String nome;
+	
+	@Column(length = 14, nullable = false)
+	private String cpf;
+	
+	@Column(length = 12, nullable = false)
+	private String rg;
+	
+	@Column(length = 100, nullable = false)
+	private String rua;
+	
+	@Column(nullable = false)
+	private Short numero;
+	
+	@Column(length = 30, nullable = false)
+	private String bairro;
+	
+	@Column(length = 10, nullable = false)
+	private String cep;
+	
+	@Column(length = 10, nullable = false)
+	private String complemento;
+	
+	@Column(length = 13, nullable = false)
+	private String telefone;
+
+	@Column(length = 14, nullable = false)
+	private String celular;
+	
+	@Column(length = 100, nullable = false)
+	private String email;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getRg() {
+		return rg;
+	}
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+
+	public String getRua() {
+		return rua;
+	}
+
+	public void setRua(String rua) {
+		this.rua = rua;
+	}
+
+	public Short getNumero() {
+		return numero;
+	}
+
+	public void setNumero(Short numero) {
+		this.numero = numero;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getComplemento() {
+		return complemento;
+	}
+
+	public void setComplemento(String complemento) {
+		this.complemento = complemento;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+}

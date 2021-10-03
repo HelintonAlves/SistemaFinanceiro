@@ -1,0 +1,137 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_102
+Eclipse-SourceBundle: org.eclipse.mylyn.bugzilla.tests;version="3.21.0
+ .v20160901-1744";roots:="."
+Bundle-Vendor: %bundleVendor
+Bundle-Localization: OSGI-INF/l10n/bundle-src
+Built-By: genie.mylyn
+Bundle-Name: %bundleName
+Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.tests.source
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Bundle-Version: 3.21.0.v20160901-1744
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaTaskCompletionTest
+ .java
+SHA1-Digest: nSi0Hl7xkBND1q/pk4NILECytSM=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaVersionTest.java
+SHA1-Digest: WKF2v3f6FclaDD+DxK4eE2rhIuo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/RepositoryReportFactoryTest.jav
+ a
+SHA1-Digest: P+mCY8VZhPIsuqKaC6VbU0wCCDo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaTaskEditorTest.java
+SHA1-Digest: lHiIx5sxTOFPpAb9CGTkfFnlQU0=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaSearchTest.java
+SHA1-Digest: GXGtmk0irHeRLOcWxQ3szdE0vjQ=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaAttachmentHandlerTest.j
+ ava
+SHA1-Digest: PveJ14ikcmvhTe4kkfWSKognmWA=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaXmlRpcClientTest.j
+ ava
+SHA1-Digest: hRWgbhq49/jDeDoECZUArjfcXBU=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaRepositoryConnectorTest
+ .java
+SHA1-Digest: RytobaXpBhzvQQsu0IZr19p83Kg=
+
+Name: org/eclipse/mylyn/bugzilla/tests/AbstractBugzillaTest.java
+SHA1-Digest: DlyyW3oTp4BMsqjXVmsq1EOVPps=
+
+Name: org/eclipse/mylyn/bugzilla/tests/support/BugzillaHarness.java
+SHA1-Digest: U6w36SHAlRvBPFuoJE2rXtkjd4s=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/RepositoryConfigurationTes
+ t.java
+SHA1-Digest: ykYl+A0d7Pe2rpKCWfdE5TCJB9g=
+
+Name: OSGI-INF/l10n/bundle-src.properties
+SHA1-Digest: XylZptSMyLUdLLSACP6vDqxcgfI=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaRepositoryConnecto
+ rStandaloneTest.java
+SHA1-Digest: Evue5+75lrDHRBg5PXvzrAGtrB8=
+
+Name: org/eclipse/mylyn/bugzilla/tests/support/BugzillaFixture.java
+SHA1-Digest: Rw4zQigxfElzkRUHS3+xxAG+4VY=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaCustomFieldsTest.j
+ ava
+SHA1-Digest: yjUbEqD3BPI3t6bUuHfJYCamV4A=
+
+Name: org/eclipse/mylyn/bugzilla/tests/AllBugzillaHeadlessStandaloneTe
+ sts.java
+SHA1-Digest: zqc1bKVgpeJMxeqIgsImf+Z2DaA=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaRepositorySettingsPa
+ geTest.java
+SHA1-Digest: rZrY22owV6EAdBiO/Sy1dSMBKHE=
+
+Name: org/eclipse/mylyn/bugzilla/tests/AllBugzillaTests.java
+SHA1-Digest: KqbjFhErzhesr8y4Xff/AFdRPc4=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaTaskHyperlinkDetecto
+ rTest.java
+SHA1-Digest: yrMclrhDJ1DrLDnIYaPLEOX0z9k=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaSearchPageTest.java
+SHA1-Digest: NCxqPb4PbtEpd84Y3GGHmubJgXo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaUtilTest.java
+SHA1-Digest: Rh2UhuUaUE8762uhhH3oSruUaNw=
+
+Name: org/eclipse/mylyn/bugzilla/tests/support/BugzillaTestSupportUtil
+ .java
+SHA1-Digest: z/E3tBtXHpjVFZiVcu+bgwLhzhs=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaRepositoryConnectorTest
+ WithGuest.java
+SHA1-Digest: h1/HVFiHlgABMThzJvqdlRq2uys=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaConfigurationTest.
+ java
+SHA1-Digest: rMtNOJocRRUQoIiG5+3V2FV2UEc=
+
+Name: about.html
+SHA1-Digest: tbAP97WduhuCJ+f5zkndJKMe6vc=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaRepositoryConnecto
+ rConfigurationTest.java
+SHA1-Digest: Oe3sHS1DAAwN4G0CEbDZ4mztmoM=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaTaskDataHandlerTest.jav
+ a
+SHA1-Digest: J5QDvABzdlVfgm9NZUGfNgDhTME=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaFlagsTest.java
+SHA1-Digest: 4+f8y58UAIDbOHKTkZlKaRHHVnY=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaClientTest.java
+SHA1-Digest: lswR+e3hQmzeY3CfzzJVD5W5LNA=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaHyperlinkDetectorTes
+ t.java
+SHA1-Digest: Qh2t0sfn2RwKsuPtLmIbV50DJcE=
+
+Name: org/eclipse/mylyn/bugzilla/tests/EncodingTest.java
+SHA1-Digest: FxWwvZmF7K2LdnXPn/H9SMjaM9A=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaDateTimeTests.java
+SHA1-Digest: vyb+R/2oxmhecuB/79qGYlmFP4g=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaAttributeMapperTes
+ t.java
+SHA1-Digest: 3iP3AkkT20XcD4uCXiCHJed4lfo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaAttributeTest.java
+SHA1-Digest: v6BVVrKBTZV1zLbANAINacf4LwQ=
+

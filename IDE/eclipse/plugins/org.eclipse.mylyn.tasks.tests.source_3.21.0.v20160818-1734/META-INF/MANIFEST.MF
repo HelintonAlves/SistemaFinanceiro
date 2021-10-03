@@ -1,0 +1,421 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.8.0_102
+Eclipse-SourceBundle: org.eclipse.mylyn.tasks.tests;version="3.21.0.v2
+ 0160818-1734";roots:="."
+Bundle-Vendor: %bundleVendor
+Bundle-Localization: OSGI-INF/l10n/bundle-src
+Built-By: genie.mylyn
+Bundle-Name: %bundleName
+Bundle-SymbolicName: org.eclipse.mylyn.tasks.tests.source
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Bundle-Version: 3.21.0.v20160818-1734
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockRepositoryConnectorU
+ i.java
+SHA1-Digest: pE2dYU2H3sBPpGr64zcqgL3ohHc=
+
+Name: org/eclipse/mylyn/tasks/tests/CommentQuoterTest.java
+SHA1-Digest: F2Wzn7y7XFAxPRJcf+spNwdIbVc=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/MultipleTaskHyperlinkDetectorTe
+ st.java
+SHA1-Digest: wXR7buUDEMKyDeYKPcn0oJeVW5k=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskRepositorySorterTest.java
+SHA1-Digest: 9BRbQRTEVsF5Ox7H4fPwOuvgcRg=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskDataStoreTest.java
+SHA1-Digest: 5fjAFFrphg78+W5FWFkWWc/SBZs=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskKeyComparatorTest.java
+SHA1-Digest: dPDoUqh3rodsWxTQGgQgF3Af4/g=
+
+Name: org/eclipse/mylyn/tasks/tests/core/DefaultTaskSchemaTest.java
+SHA1-Digest: g+4blKS2vQMt48zpTTcmdOjpz7M=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskWorkingSetTest.java
+SHA1-Digest: VypKfe2cTxKcg9DOJ9v3QbYUp7E=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListSaveManagerTest.java
+SHA1-Digest: g3BDBAJ30d3asehn1tBL1ON1IDQ=
+
+Name: org/eclipse/mylyn/tasks/tests/TasksTestsPlugin.java
+SHA1-Digest: TG3Osla/7op8fb7gnR4Itfk+Dm8=
+
+Name: org/eclipse/mylyn/tasks/tests/RepositoryTemplateManagerTest.java
+SHA1-Digest: YcefnbdHDylPP82bLAIImhIdRfI=
+
+Name: org/eclipse/mylyn/tasks/tests/core/TaskListUnmatchedContainerTes
+ t.java
+SHA1-Digest: ZjILVMETIGsFO7uKZdLCB2fRMMc=
+
+Name: org/eclipse/mylyn/tasks/tests/data/XmlExternalizationTest.java
+SHA1-Digest: vViikeOQLVQ8HghR22tYiy99XD4=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListDropAdapterTest.java
+SHA1-Digest: XYNBDEu+M5mSgHPJ80I23dZsmMk=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockTaskDataHandler.java
+SHA1-Digest: Mu0iI2p3NFZBcsKJbYZ2jzF4xxU=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskContainerTest.java
+SHA1-Digest: G7S+AfWuBOGhs6kCUt0G7DTmiKY=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskDataExportTest.java
+SHA1-Digest: ZPLVwhtRw1hLFOIFWHy6HZ0BHSM=
+
+Name: org/eclipse/mylyn/tasks/tests/data/Xml11InputStreamTest.java
+SHA1-Digest: mr+7XOs2pPrZDP5umLq4MiY+gzU=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskRepositoryViewSorterTest.java
+SHA1-Digest: JgAHU0s6PStqhRR4PU/Ajg+8pX4=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/AssertionProgressMonitor
+ .java
+SHA1-Digest: koZMtAxYvGIcoEDyNPWFhTBBON8=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/MockTextViewer.java
+SHA1-Digest: aTTS/S14NJyTa3dKVLjF5Lz4uso=
+
+Name: org/eclipse/mylyn/tasks/tests/NewTaskFromSelectionActionTest.jav
+ a
+SHA1-Digest: UbqCDneP4bnHuy4FgkDcRJfY9cs=
+
+Name: org/eclipse/mylyn/tasks/tests/NewTaskWizardRepositorySelectionTe
+ st.java
+SHA1-Digest: aRYQJk6ph1qVQLSpUmOtBIAhwaQ=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/AttachmentUtilTest.java
+SHA1-Digest: d5K9oJTHU3JjFUaFvLDRqVQqzWQ=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskTest.java
+SHA1-Digest: jgyKmxk14GE0WZfyMEGzJEsrX5I=
+
+Name: org/eclipse/mylyn/tasks/tests/support/MockRepositoryConnectorAda
+ pter.java
+SHA1-Digest: 5lOZ6irDXPj6lpPQfoyamK0hezk=
+
+Name: org/eclipse/mylyn/tasks/tests/data/TaskDataDiffTest.java
+SHA1-Digest: MZPQKLkGKsrUc8Q9GOYWstXagyQ=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskExportImportTest.java
+SHA1-Digest: 5VAF6LtGYqEjnJBhy/wtlIhQhkM=
+
+Name: org/eclipse/mylyn/tasks/tests/support/MockRepositoryConnectorDes
+ criptor.java
+SHA1-Digest: khDxTGG0lnZi5USAPVBNKqtiX7w=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListPresentationTest.java
+SHA1-Digest: pvcLqi/Pbv9/tzco+04QbQ7c3Ps=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListUiTest.java
+SHA1-Digest: OHc7vVgVQVbtEx2LsWQeqwiFdNc=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskDataImportTest.java
+SHA1-Digest: n65D0TSaF2f9cUiZ0+/5Jq+zuvI=
+
+Name: OSGI-INF/l10n/bundle-src.properties
+SHA1-Digest: 2X8f/TaSefsDSnMBgWYiMwVg92s=
+
+Name: org/eclipse/mylyn/tasks/tests/core/AbstractRepositoryConnectorTe
+ st.java
+SHA1-Digest: 2VqeTo5t/nyX4F7JLVBFaxYeXKI=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/TaskEditorExtensionsTest
+ .java
+SHA1-Digest: rkiieL55+NRtK826/GDx65xvo2A=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskDiffUtilTest.java
+SHA1-Digest: zBtx6HYN/HsHTgffIF9kZYWq7pA=
+
+Name: org/eclipse/mylyn/tasks/tests/AllTasksTests.java
+SHA1-Digest: o2HxhDahJA4XOa6h1+7CNjohWKk=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/MockWikiEditorExtension.
+ java
+SHA1-Digest: Ywsr5Fi93C2tkir9juOJ3kFpM0A=
+
+Name: org/eclipse/mylyn/tasks/tests/util/MockRepositoryConnectorTestCa
+ se.java
+SHA1-Digest: h5/hOGo6gQGGxoeUM+7U6Ry/4Jk=
+
+Name: org/eclipse/mylyn/tasks/tests/core/TaskRepositoryLocationTest.ja
+ va
+SHA1-Digest: lTc0CV3pnE9TlE5VmZnfnZzaQp0=
+
+Name: org/eclipse/mylyn/tasks/tests/core/ITasksCoreConstantsTest.java
+SHA1-Digest: dD5QmWXG6WMUeknpAj1UTtAtgIw=
+
+Name: about.html
+SHA1-Digest: tbAP97WduhuCJ+f5zkndJKMe6vc=
+
+Name: org/eclipse/mylyn/tasks/tests/data/SynchronizationMangerTest.jav
+ a
+SHA1-Digest: +dCrF6cre4e6GsMlMlKA3ntbgC4=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/ScheduledTaskContainerTest.java
+SHA1-Digest: bA6tFtMJIz+qZsUOFiPbOY5i1tM=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/RegionComparatorTest.jav
+ a
+SHA1-Digest: p1TDEy42LhJgH8Dn+FMwIIl6/Kc=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockAttachmentHandler.ja
+ va
+SHA1-Digest: bZdmZ/iyug0J6GK7i3jEcooTbUU=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskRepositoryFilterTests.java
+SHA1-Digest: vHTon1r2zIMczUz0ql4XBsuYHUI=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListSorterTest.java
+SHA1-Digest: PspqBJriMx9PHlSoxgje+Sg/DdQ=
+
+Name: org/eclipse/mylyn/tasks/tests/AttachmentSizeFormatterTest.java
+SHA1-Digest: LjKknxFWfT8lgOKxUO8OgyvERXw=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/AttributeEditorTest.java
+SHA1-Digest: ilKBU8hN3TevJg4eRFhvycOqYuA=
+
+Name: org/eclipse/mylyn/tasks/tests/util/TestTaskDataCollector.java
+SHA1-Digest: ID7ynGgaOFS0VWKPTB5IjJVIi1g=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockRepositoryConnector.
+ java
+SHA1-Digest: wJBftZSUDhkabIfJz3kR+KxNqLI=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/RetrieveTitleFromUrlTest.java
+SHA1-Digest: yvCBBiYg7MksIJblo0TpDBsG1PQ=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockRepositoryConnectorW
+ ithTaskDataHandler.java
+SHA1-Digest: PWAGW3BOYo9h6xIVd77E2xfXAEU=
+
+Name: org/eclipse/mylyn/tasks/tests/LinkProviderTest.java
+SHA1-Digest: 3siPbiDA0gPPzN0u7TZJLA3L3p0=
+
+Name: org/eclipse/mylyn/tasks/tests/OptionsProposalProviderTest.java
+SHA1-Digest: jjPbfeGW64i6tJII6yWJQbwXbkw=
+
+Name: org/eclipse/mylyn/tasks/tests/core/TaskInitializationDataTest.ja
+ va
+SHA1-Digest: YllcZyiegWBrW3Y7hYpd51DzdOE=
+
+Name: org/eclipse/mylyn/tasks/tests/bugs/SupportHandlerManagerTest.jav
+ a
+SHA1-Digest: 1/rw6zSMuUgDEN13mtnNbi1o7Zw=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/AttachmentTableLabelProv
+ iderTest.java
+SHA1-Digest: NH+mlykvs9o6HJoXRqhlIr7CeAk=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskAttachmentPropertyTesterTes
+ t.java
+SHA1-Digest: iUKtoNrBPbDbSLblAjKptzD3N8Q=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockTask.java
+SHA1-Digest: OZLl6XXLkSpL87YO9AQpj0jWLa0=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/MarkTaskHandlerTest.java
+SHA1-Digest: E4LCNPg+HtBdi4UuucfAhOMNrfo=
+
+Name: org/eclipse/mylyn/tasks/tests/core/TaskAttributeMetaDataTest.jav
+ a
+SHA1-Digest: 0S1WLx4gAyZmbnhARCv+Sv4m6aI=
+
+Name: org/eclipse/mylyn/tasks/tests/CommentGroupStrategyTest.java
+SHA1-Digest: RbygFAblDfWpeF1OHVGqu2WGL1E=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListBackupManagerTest.java
+SHA1-Digest: hCCb69AkpYUU3eouwri8IfeKGpQ=
+
+Name: org/eclipse/mylyn/tasks/tests/core/PriorityLevelTest.java
+SHA1-Digest: 5K82/SezqxldT4scAofULJYULjA=
+
+Name: org/eclipse/mylyn/tasks/tests/ScheduledPresentationTest.java
+SHA1-Digest: zQs+B4ZkaXL6Kmx8xBaAFHtEopM=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskListViewTest.java
+SHA1-Digest: Yr9g2Kp4wBualfAzfoL0/uHdivE=
+
+Name: org/eclipse/mylyn/tasks/tests/support/MockSynchronizationPartici
+ pant.java
+SHA1-Digest: oVRMBo03iFahy2WBHnF4lXsaXGs=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/TaskUrlHyperlinkDetector
+ Test.java
+SHA1-Digest: sKIs5uHg3WMky2GPscXY7Ea5vOo=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskAttachmentTest.java
+SHA1-Digest: d6oybqKZGRdocmdRg/AaqUav+o0=
+
+Name: org/eclipse/mylyn/tasks/tests/core/RepositoryClientManagerTest.j
+ ava
+SHA1-Digest: thWpCuiILNIvldrIIWmUWvnOOfc=
+
+Name: org/eclipse/mylyn/tasks/tests/core/TaskRepositoryTest.java
+SHA1-Digest: 3MjkLoXXQSXdXfMoQlVLQeZXPw4=
+
+Name: org/eclipse/mylyn/tasks/tests/RefactorRepositoryUrlOperationTest
+ .java
+SHA1-Digest: rA1cbRGVLVjIWo4ES5q7mVITCU0=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskActivationHistoryTest.java
+SHA1-Digest: 03b3g5DCTJA9AtZoazLxZloG5pA=
+
+Name: org/eclipse/mylyn/tasks/tests/util/TestUtils.java
+SHA1-Digest: lb/PY5zljwMZmOgU0uln/1RMaX8=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskListFilterTest.java
+SHA1-Digest: n8HfLzQ4wXnSje9LgBLOvD4PACw=
+
+Name: org/eclipse/mylyn/tasks/tests/ProjectRepositoryAssociationTest.j
+ ava
+SHA1-Digest: OrYZLlYSn9jSGIaTQjLw5jTMO64=
+
+Name: org/eclipse/mylyn/tasks/tests/PersonProposalProviderTest.java
+SHA1-Digest: 2dD0ULv5E8t8oz+21UfEo1q6kWM=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/PlanningPartTest.java
+SHA1-Digest: AiciDdolpo8Yy6CO6WnsadvR4ps=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/EditorUtilTest.java
+SHA1-Digest: yJahNcELLv3KiGaLELlPlam2NmA=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockRepositorySettingsPa
+ ge.java
+SHA1-Digest: RerI4noA7vEs84JFjeoU3ekZjIc=
+
+Name: org/eclipse/mylyn/tasks/tests/data/TaskAttributeTest.java
+SHA1-Digest: +YFUgbtOzMWZXf+QaqvIlysbUpM=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskActivationActionTest.java
+SHA1-Digest: FfyCQXz3un0fCjkQy9N5X/2GLgA=
+
+Name: org/eclipse/mylyn/tasks/tests/core/RepositoryConnectorContributo
+ rTest.java
+SHA1-Digest: aa38OrcVwcH61J+4tEFfbcX0Kjs=
+
+Name: org/eclipse/mylyn/tasks/tests/support/MockRepositoryConnectorCon
+ tributor.java
+SHA1-Digest: YTakIkbMJjntoMoQg68fsrnwgHg=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListContentProviderTest.java
+SHA1-Digest: QKQCP2nPkT7P5RlPDMrXRneGams=
+
+Name: org/eclipse/mylyn/tasks/tests/TasksUiUtilTest.java
+SHA1-Digest: holrBxQHkZTobIbD/QgLfqSzy7k=
+
+Name: org/eclipse/mylyn/tasks/tests/BackgroundSaveTest.java
+SHA1-Digest: SGv6D0Kl9Xu77RF6yv6sACEdc2Q=
+
+Name: org/eclipse/mylyn/tasks/tests/core/TaskJobFactoryTest.java
+SHA1-Digest: GWJ1f3PL8Wed6UvI9ozaI8c7NxA=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskMapperTest.java
+SHA1-Digest: QUZDdZ15IiHa2BzylYhmgjdR26E=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListTest.java
+SHA1-Digest: Zx3PA8X5uJbgUKT7ENlJwMeI3XM=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskListSynchronizationSchedule
+ rTest.java
+SHA1-Digest: ztyY7Nc5ARNLZvVQ7hLE/3Sn19E=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/MockTextileEditorExtensi
+ on.java
+SHA1-Digest: ATob9MJS+BCXTA9qBo1tAAyv2bc=
+
+Name: org/eclipse/mylyn/tasks/tests/StackTraceDuplicateDetectorTest.ja
+ va
+SHA1-Digest: igvjVCW9Ndjh/NZlq710fUPk0Zg=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/AbstractRepositoryConnectorUiTe
+ st.java
+SHA1-Digest: Ss1P5Mz7VVKGLFHU0OWtXBD6gEU=
+
+Name: org/eclipse/mylyn/tasks/tests/DateRangeTest.java
+SHA1-Digest: uJ0e3XfTa5vMBwcon+s+15qLBQo=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskRepositoriesExternalizerTest.j
+ ava
+SHA1-Digest: iLPPY3sQSqFdEhxB68Ihs77kUlw=
+
+Name: org/eclipse/mylyn/tasks/tests/TestException.java
+SHA1-Digest: No7nSk8dqu1shvAC1l/OghnVPxo=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/RepositoryCompletionProc
+ essorTest.java
+SHA1-Digest: Dr6glsYN7Niz9XqejkgaCti+qLQ=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskListServiceMessageControlTe
+ st.java
+SHA1-Digest: 122vQrBpoWGDsvqdHZZuGNUkfao=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskHyperlinkDetectorTest.java
+SHA1-Digest: kehLKl5tofePMwA7uSccRlJg08I=
+
+Name: org/eclipse/mylyn/tasks/tests/CopyDetailsActionTest.java
+SHA1-Digest: 2ez8S6ebDYAq1efpzxYuzoMW4JA=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/TaskMigratorTest.java
+SHA1-Digest: MDm3xpSeOwhAYtLkO0BqRAumIqU=
+
+Name: org/eclipse/mylyn/tasks/tests/QueryExportImportTest.java
+SHA1-Digest: 8enbRV/1LmpUvwtONKcuQvUxsBs=
+
+Name: org/eclipse/mylyn/tasks/tests/connector/MockRepositoryQuery.java
+SHA1-Digest: tUQRXuI+fwLt+u81CfUdgpfP4Ik=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskTestUtil.java
+SHA1-Digest: RIwaGoeKWczUbXNDHZulZIWy9Vg=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskRepositoryManagerTest.java
+SHA1-Digest: c9HW4I3fvIenDZW//RYTYmb1Zhk=
+
+Name: org/eclipse/mylyn/tasks/tests/data/TaskDataExternalizerTest.java
+SHA1-Digest: G4As74OmU20DWF8zJ/SdQmpXZUY=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskActivityManagerTest.java
+SHA1-Digest: LL4KuWBMGF9NByPiw6K3cWuJ9T4=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListExternalizationTest.java
+SHA1-Digest: gafl9H6QM848sOihJpka6mDXQbk=
+
+Name: org/eclipse/mylyn/tasks/tests/RepositorySettingsPageTest.java
+SHA1-Digest: l5YJzgp9IN2ma30eG6SCpx+RsOY=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/editor/TaskEditorPartDescriptor
+ Test.java
+SHA1-Digest: wv0UdmE3NXytj/c2yE57Ky/1z/c=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskListInterestSorterTest.java
+SHA1-Digest: mM3SVpTtq46PTESvwplesHFZf4c=
+
+Name: org/eclipse/mylyn/tasks/tests/core/FileTaskAttachmentSourceTest.
+ java
+SHA1-Digest: NBx19+qMoyhY+GT5kEheD7yYu1Y=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskRepositoryCredentialsTest.java
+SHA1-Digest: NisWALtX2p8gRHO6WFITrftHsmY=
+
+Name: org/eclipse/mylyn/tasks/tests/data/TaskAttributeMapperTest.java
+SHA1-Digest: tH7awhubzZKiSClmuOQAgoqD2VE=
+
+Name: org/eclipse/mylyn/tasks/tests/ui/TaskRelationHyperlinkDetectorTe
+ st.java
+SHA1-Digest: 8lGuzNml7ZlkvjMw9C/OkMqkQHM=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskPlanningEditorTest.java
+SHA1-Digest: KhTl7ifiTKRTRKgo6NyLybJL+uY=
+
+Name: org/eclipse/mylyn/tasks/tests/core/SynchronizeTasksJobTest.java
+SHA1-Digest: 06nDV3Iss0p+Popu16lLLau7tvU=
+
+Name: org/eclipse/mylyn/tasks/tests/TaskDataManagerTest.java
+SHA1-Digest: CT1lEsw9epEGkcAiWVnf92oZlow=
+

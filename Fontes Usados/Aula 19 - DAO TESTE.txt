@@ -1,0 +1,243 @@
+TESTE DO CIDADE DAO
+
+public class CidadeDAOTest {
+	@Test
+	@Ignore
+	public void salvar() {
+		Long codigoEstado = 1L;
+		
+		EstadoDAO estadoDAO = new EstadoDAO();
+
+		Estado estado = estadoDAO.buscar(codigoEstado);
+
+		Cidade cidade = new Cidade();
+		cidade.setNome("Marília");
+		cidade.setEstado(estado);
+
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		cidadeDAO.salvar(cidade);
+	}
+
+	@Test
+	@Ignore
+	public void listar() {
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		List<Cidade> resultado = cidadeDAO.listar();
+
+		for (Cidade cidade : resultado) {
+			System.out.println("Código da Cidade: " + cidade.getCodigo());
+			System.out.println("Nome da Cidade: " + cidade.getNome());
+			System.out.println("Código do Estado: " + cidade.getEstado().getCodigo());
+			System.out.println("Sigla do Estado: " + cidade.getEstado().getSigla());
+			System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
+			System.out.println();
+		}
+	}
+	
+	@Test
+	@Ignore
+	public void buscar(){
+		Long codigo = 7L;
+		
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		Cidade cidade = cidadeDAO.buscar(codigo);
+		
+		System.out.println("Código da Cidade: " + cidade.getCodigo());
+		System.out.println("Nome da Cidade: " + cidade.getNome());
+		System.out.println("Código do Estado: " + cidade.getEstado().getCodigo());
+		System.out.println("Sigla do Estado: " + cidade.getEstado().getSigla());
+		System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
+	}
+	
+	@Test
+	@Ignore
+	public void excluir(){
+		Long codigo = 7L;
+		
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		Cidade cidade = cidadeDAO.buscar(codigo);
+		
+		cidadeDAO.excluir(cidade);
+		
+		System.out.println("Cidade Removida");
+		System.out.println("Código da Cidade: " + cidade.getCodigo());
+		System.out.println("Nome da Cidade: " + cidade.getNome());
+		System.out.println("Código do Estado: " + cidade.getEstado().getCodigo());
+		System.out.println("Sigla do Estado: " + cidade.getEstado().getSigla());
+		System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
+	}
+	
+	@Test
+	@Ignore
+	public void editar(){
+		Long codigoCidade = 6L;
+		Long codigoEstado = 11L;
+		
+		EstadoDAO estadoDAO = new EstadoDAO();
+		Estado estado = estadoDAO.buscar(codigoEstado);
+		
+		System.out.println("Código do Estado: " + estado.getCodigo());
+		System.out.println("Sigla do Estado: " + estado.getSigla());
+		System.out.println("Nome do Estado: " + estado.getNome());
+		
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		Cidade cidade = cidadeDAO.buscar(codigoCidade);
+		
+		System.out.println("Cidade A Ser Editada");
+		System.out.println("Código da Cidade: " + cidade.getCodigo());
+		System.out.println("Nome da Cidade: " + cidade.getNome());
+		System.out.println("Código do Estado: " + cidade.getEstado().getCodigo());
+		System.out.println("Sigla do Estado: " + cidade.getEstado().getSigla());
+		System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
+		
+		cidade.setNome("Guarapuava");
+		cidade.setEstado(estado);
+		
+		cidadeDAO.editar(cidade);
+		
+		System.out.println("Cidade Editada");
+		System.out.println("Código da Cidade: " + cidade.getCodigo());
+		System.out.println("Nome da Cidade: " + cidade.getNome());
+		System.out.println("Código do Estado: " + cidade.getEstado().getCodigo());
+		System.out.println("Sigla do Estado: " + cidade.getEstado().getSigla());
+		System.out.println("Nome do Estado: " + cidade.getEstado().getNome());
+	}
+}
+
+
+
+
+
+
+
+
+TESTE CLIENTE DAO SALVAR
+
+
+
+public class ClienteDAOTest {
+	@Test
+	@Ignore
+	public void salvar() throws ParseException {
+		PessoaDAO pessoaDAO = new PessoaDAO();
+		Pessoa pessoa = pessoaDAO.buscar(2L);
+
+		Cliente cliente = new Cliente();
+		cliente.setDataCadastro(new SimpleDateFormat("dd/MM/yyyy").parse("09/06/2015"));
+		cliente.setLiberado(false);
+		cliente.setPessoa(pessoa);
+
+		ClienteDAO clienteDAO = new ClienteDAO();
+		clienteDAO.salvar(cliente);
+
+		System.out.println("Cliente salvo com sucesso.");
+	}
+}
+
+
+
+
+
+
+
+
+FORNECEDOR TESTES
+
+public class FornecedorDAOTest {
+	@Test
+	@Ignore
+	public void salvar() {
+		Fornecedor fornecedor = new Fornecedor();
+		fornecedor.setDescricao("Aché");
+
+		FornecedorDAO fornecedorDAO = new FornecedorDAO();
+		fornecedorDAO.salvar(fornecedor);
+	}
+
+	@Test
+	@Ignore
+	public void listar() {
+		FornecedorDAO FornecedorDAO = new FornecedorDAO();
+		List<Fornecedor> resultado = FornecedorDAO.listar();
+
+		System.out.println("Total de Registros Encontrados: " + resultado.size());
+
+		for (Fornecedor fornecedor : resultado) {
+			System.out.println(fornecedor.getCodigo() + " - " + fornecedor.getDescricao());
+		}
+	}
+	
+	@Test
+	@Ignore
+	public void buscar(){
+		Long codigo = 3L;
+		
+		FornecedorDAO fornecedorDAO = new FornecedorDAO();
+		Fornecedor fornecedor = fornecedorDAO.buscar(codigo);
+		
+		if(fornecedor == null){
+			System.out.println("Nenhum registro encontrado");
+		}else{
+			System.out.println("Registro encontrado:");
+			System.out.println(fornecedor.getCodigo() + " - " + fornecedor.getDescricao());
+		}
+	}
+}
+
+
+
+
+
+
+SALVAR TESTE PRODUTO
+
+public class ProdutoDAOTest {
+	@Test
+	@Ignore
+	public void salvar(){
+		FornecedorDAO fornecedorDAO = new FornecedorDAO();
+		Fornecedor fornecedor = fornecedorDAO.buscar(new Long("3"));
+		
+		Produto produto = new Produto();
+		produto.setDescricao("Curso de Java");
+		produto.setFornecedor(fornecedor);
+		produto.setPreco(new BigDecimal("13.70"));
+		produto.setQuantidade(new Short("7"));
+		
+		ProdutoDAO produtoDAO = new ProdutoDAO();
+		produtoDAO.salvar(produto);
+		
+		System.out.println("Produto salvo com sucesso");
+	}
+}
+
+
+
+
+
+TESTE SALVAR USUARIO
+
+public class UsuarioDAOTest {
+	@Test
+	@Ignore
+	public void salvar(){
+		PessoaDAO pessoaDAO = new PessoaDAO();
+		Pessoa pessoa = pessoaDAO.buscar(1L);
+		
+		System.out.println("Pessoa Encontrada");
+		System.out.println("Nome: " + pessoa.getNome());
+		System.out.println("CPF: " + pessoa.getCpf());
+		
+		Usuario usuario = new Usuario();
+		usuario.setAtivo(true);
+		usuario.setPessoa(pessoa);
+		usuario.setSenha("q1w2e3r4");
+		usuario.setTipo('A');
+		
+		UsuarioDAO usuarioDAO = new UsuarioDAO();
+		usuarioDAO.salvar(usuario);
+		
+		System.out.println("Usuário salvo com sucesso.");
+	}
+}	
+

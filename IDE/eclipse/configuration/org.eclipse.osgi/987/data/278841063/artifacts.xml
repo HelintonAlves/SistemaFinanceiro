@@ -1,0 +1,1084 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1633262980803'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='89'>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.e4.rcp' version='1.4.0.v20150603-0857'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.e4.rcp_1.4.0.v20150603-0857/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.e4.rcp_1.4.0.v20150603-0857'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.edit' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.edit_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.edit_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.edit' version='2.9.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.ecore.edit_2.9.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.ecore.edit_2.9.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.commons.notifications' version='1.8.0.v20150602-2344'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.commons.notifications_1.8.0.v20150602-2344/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.commons.notifications_1.8.0.v20150602-2344'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.webpageeditor.feature' version='2.7.0.v201504282058'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.webpageeditor.feature_2.7.0.v201504282058/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.webpageeditor.feature_2.7.0.v201504282058'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.jsdt.feature' version='1.6.200.v201505071819'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.jsdt.feature_1.6.200.v201505071819/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.jsdt.feature_1.6.200.v201505071819'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ecore' version='2.9.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.mapping.ecore_2.9.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.mapping.ecore_2.9.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.common_core.feature' version='3.7.0.v201505132009'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.common_core.feature_3.7.0.v201505132009/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.common_core.feature_3.7.0.v201505132009'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.package.common.feature' version='4.5.0.20150621-1200'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.epp.package.common.feature_4.5.0.20150621-1200/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.epp.package.common.feature_4.5.0.20150621-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.mpc' version='1.4.0.v20150618-1659'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.epp.mpc_1.4.0.v20150618-1659/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.epp.mpc_1.4.0.v20150618-1659'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.bugzilla_feature' version='3.16.0.v20150525-2001'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.bugzilla_feature_3.16.0.v20150525-2001/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.bugzilla_feature_3.16.0.v20150525-2001'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.httpclient4.ssl.feature' version='1.0.0.v20150512-1727'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20150512-1727/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20150512-1727'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.monitor' version='3.16.0.v20150526-1951'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.monitor_3.16.0.v20150526-1951/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.monitor_3.16.0.v20150526-1951'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ecore.editor' version='2.10.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.server_ui.feature' version='3.4.200.v201503102136'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.server_ui.feature_3.4.200.v201503102136/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.server_ui.feature_3.4.200.v201503102136'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.user.ui' version='2.2.100.v20150601-1708'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.equinox.p2.user.ui_2.2.100.v20150601-1708/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.equinox.p2.user.ui_2.2.100.v20150601-1708'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.commons.identity' version='1.8.0.v20150526-1951'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.commons.identity_1.8.0.v20150526-1951/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.commons.identity_1.8.0.v20150526-1951'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.enterprise_core.feature' version='3.6.0.v201405070205'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.egit.mylyn' version='4.0.0.201506090130-r'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.egit.mylyn_4.0.0.201506090130-r/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.egit.mylyn_4.0.0.201506090130-r'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.feature' version='3.10.0.v20150512-1727'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.ecf.filetransfer.feature_3.10.0.v20150512-1727/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.ecf.filetransfer.feature_3.10.0.v20150512-1727'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.commons.repositories' version='1.8.0.v20150526-1951'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.commons.repositories_1.8.0.v20150526-1951/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.commons.repositories_1.8.0.v20150526-1951'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.team_feature' version='3.16.0.v20150522-2252'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.team_feature_3.16.0.v20150522-2252/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.team_feature_3.16.0.v20150522-2252'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore' version='2.11.0.v20150512-0501'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.ecore_2.11.0.v20150512-0501/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.ecore_2.11.0.v20150512-0501'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.oomph.p2' version='1.1.0.v20150610-1534'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.oomph.p2_1.1.0.v20150610-1534/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.oomph.p2_1.1.0.v20150610-1534'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.recommenders.rcp.feature' version='2.2.0.v20150609-1848'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.recommenders.rcp.feature_2.2.0.v20150609-1848/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.recommenders.rcp.feature_2.2.0.v20150609-1848'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.edit.ui' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.edit.ui_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.edit.ui_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.rcp.feature' version='1.2.100.v20150527-1706'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.equinox.p2.rcp.feature_1.2.100.v20150527-1706/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.equinox.p2.rcp.feature_1.2.100.v20150527-1706'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.jpa.feature' version='3.4.2.v201505291546'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jpt.jpa.feature_3.4.2.v201505291546/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jpt.jpa.feature_3.4.2.v201505291546'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.wtp.jpa.feature' version='1.2.0.e43-20150602-1742'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.m2e.wtp.jpa.feature_1.2.0.e43-20150602-1742/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.m2e.wtp.jpa.feature_1.2.0.e43-20150602-1742'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.commons' version='3.16.0.v20150609-0602'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.commons_3.16.0.v20150609-0602/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.commons_3.16.0.v20150609-0602'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.web_ui.feature' version='3.7.0.v201505261810'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.web_ui.feature_3.7.0.v201505261810/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.web_ui.feature_3.7.0.v201505261810'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.tasks.ide' version='3.16.0.v20150525-2001'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.tasks.ide_3.16.0.v20150525-2001/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.tasks.ide_3.16.0.v20150525-2001'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.databinding.edit' version='1.4.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.databinding.edit_1.4.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.databinding.edit_1.4.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.httpclient4.feature' version='3.10.0.v20150512-1727'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.10.0.v20150512-1727/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.feature_3.10.0.v20150512-1727'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.wtp.feature' version='1.2.0.20150602-1740'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.m2e.wtp.feature_1.2.0.20150602-1740/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.m2e.wtp.feature_1.2.0.20150602-1740'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.platform' version='4.5.0.v20150603-2358'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.platform_4.5.0.v20150603-2358/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.platform_4.5.0.v20150603-2358'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.draw2d' version='3.10.0.201506010206'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.draw2d_3.10.0.201506010206/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.draw2d_3.10.0.201506010206'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.wtp.jaxrs.feature' version='1.2.0.20150602-1740'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.m2e.wtp.jaxrs.feature_1.2.0.20150602-1740/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.m2e.wtp.jaxrs.feature_1.2.0.20150602-1740'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.package.jee.feature' version='4.5.0.20150621-1200'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.epp.package.jee.feature_4.5.0.20150621-1200/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.epp.package.jee.feature_4.5.0.20150621-1200'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.discovery' version='3.16.0.v20150602-1735'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.discovery_3.16.0.v20150602-1735/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.discovery_3.16.0.v20150602-1735'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common.ui' version='2.10.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.common.ui_2.10.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.common.ui_2.10.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jdt' version='3.11.0.v20150603-2000'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jdt_3.11.0.v20150603-2000/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jdt_3.11.0.v20150603-2000'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.server_core.feature' version='3.4.200.v201503102136'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.server_core.feature_3.4.200.v201503102136/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.server_core.feature_3.4.200.v201503102136'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.wikitext_feature' version='2.5.0.v20150522-1430'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.wikitext_feature_2.5.0.v20150522-1430/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.wikitext_feature_2.5.0.v20150522-1430'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.gef' version='3.10.0.201506010206'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.gef_3.10.0.201506010206/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.gef_3.10.0.201506010206'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.logging.aeri.feature' version='1.0.0.v20150617-0732'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.epp.logging.aeri.feature_1.0.0.v20150617-0732/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.epp.logging.aeri.feature_1.0.0.v20150617-0732'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.server_ui.feature' version='3.3.500.v201505261810'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.server_ui.feature_3.3.500.v201505261810/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.server_ui.feature_3.3.500.v201505261810'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.core.ssl.feature' version='1.0.0.v20150512-1727'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20150512-1727/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.ecf.core.ssl.feature_1.0.0.v20150512-1727'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ui' version='2.8.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.codegen.ui_2.8.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.codegen.ui_2.8.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.p2.extras.feature' version='1.2.100.v20150601-1708'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.equinox.p2.extras.feature_1.2.100.v20150601-1708/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.equinox.p2.extras.feature_1.2.100.v20150601-1708'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.converter' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.converter_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.converter_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.databinding' version='1.4.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.databinding_1.4.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.databinding_1.4.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.editor' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.ecore.editor_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.ecore.editor_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.enterprise_ui.feature' version='3.7.0.v201505131719'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.enterprise_ui.feature_3.7.0.v201505131719/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.enterprise_ui.feature_3.7.0.v201505131719'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.web_core.feature' version='3.7.0.v201506041749'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.web_core.feature_3.7.0.v201506041749/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.web_core.feature_3.7.0.v201506041749'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.java_feature' version='3.16.0.v20150522-2252'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.java_feature_3.16.0.v20150522-2252/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.java_feature_3.16.0.v20150522-2252'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.web_core.feature' version='3.7.0.v201505132009'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.web_core.feature_3.7.0.v201505132009/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.web_core.feature_3.7.0.v201505132009'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.ws.jaxws.feature' version='1.2.202.v201504291921'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.ws.jaxws.feature_1.2.202.v201504291921/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.ws.jaxws.feature_1.2.202.v201504291921'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.oomph.setup.core' version='1.1.0.v20150610-1559'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.oomph.setup.core_1.1.0.v20150610-1559/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.oomph.setup.core_1.1.0.v20150610-1559'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.ws_ui.feature' version='3.7.0.v201505141512'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.ws_ui.feature_3.7.0.v201505141512/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.ws_ui.feature_3.7.0.v201505141512'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.egit' version='4.0.0.201506090130-r'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.egit_4.0.0.201506090130-r/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.egit_4.0.0.201506090130-r'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.codegen_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.codegen_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ui' version='2.9.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.mapping.ui_2.9.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.mapping.ui_2.9.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common' version='2.11.0.v20150512-0501'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.common_2.11.0.v20150512-0501/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.common_2.11.0.v20150512-0501'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.logback.feature' version='1.6.0.20150526-2032'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.m2e.logback.feature_1.6.0.20150526-2032/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.m2e.logback.feature_1.6.0.20150526-2032'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.server_core.feature' version='3.3.500.v201505132000'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.server_core.feature_3.3.500.v201505132000/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.server_core.feature_3.3.500.v201505132000'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping' version='2.9.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.mapping_2.9.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.mapping_2.9.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ecore.ui' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.codegen.ecore.ui_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.codegen.ecore.ui_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.feature' version='1.6.0.20150526-2032'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.m2e.feature_1.6.0.20150526-2032/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.m2e.feature_1.6.0.20150526-2032'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.filetransfer.ssl.feature' version='1.0.0.v20150512-1727'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20150512-1727/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20150512-1727'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ecore' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf.codegen.ecore_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf.codegen.ecore_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.help' version='2.1.0.v20150603-2000'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.help_2.1.0.v20150603-2000/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.help_2.1.0.v20150603-2000'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.server_adapters.ext.feature' version='3.3.400.v201501040134'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.server_adapters.ext.feature_3.3.400.v201501040134/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.server_adapters.ext.feature_3.3.400.v201501040134'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.ide_feature' version='3.16.0.v20150522-2252'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.ide_feature_3.16.0.v20150522-2252/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.ide_feature_3.16.0.v20150522-2252'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn_feature' version='3.16.0.v20150609-0543'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn_feature_3.16.0.v20150609-0543/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn_feature_3.16.0.v20150609-0543'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.recommenders.mylyn.rcp.feature' version='2.2.0.v20150609-1848'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.recommenders.mylyn.rcp.feature_2.2.0.v20150609-1848/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.recommenders.mylyn.rcp.feature_2.2.0.v20150609-1848'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.wtp.jsf.feature' version='1.2.0.20150602-1740'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.m2e.wtp.jsf.feature_1.2.0.20150602-1740/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.m2e.wtp.jsf.feature_1.2.0.20150602-1740'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jgit' version='4.0.0.201506090130-r'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jgit_4.0.0.201506090130-r/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jgit_4.0.0.201506090130-r'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jst.web_ui.feature' version='3.7.0.v201506041749'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.jst.web_ui.feature_3.7.0.v201506041749/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.jst.web_ui.feature_3.7.0.v201506041749'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.xml_core.feature' version='3.7.0.v201502261749'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.xml_core.feature_3.7.0.v201502261749/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.xml_core.feature_3.7.0.v201502261749'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.common_ui.feature' version='3.7.0.v201505132009'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.common_ui.feature_3.7.0.v201505132009/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.common_ui.feature_3.7.0.v201505132009'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf' version='2.11.0.v20150601-0402'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.emf_2.11.0.v20150601-0402/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.emf_2.11.0.v20150601-0402'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.mylyn.context_feature' version='3.16.0.v20150522-2252'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.mylyn.context_feature_3.16.0.v20150522-2252/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.mylyn.context_feature_3.16.0.v20150522-2252'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.rcp' version='4.5.0.v20150603-2331'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.rcp_4.5.0.v20150603-2331/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.rcp_4.5.0.v20150603-2331'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.oomph.setup' version='1.1.0.v20150610-1559'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.oomph.setup_1.1.0.v20150610-1559/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.oomph.setup_1.1.0.v20150610-1559'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.pde' version='3.11.0.v20150603-2000'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.pde_3.11.0.v20150603-2000/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.pde_3.11.0.v20150603-2000'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.xml_ui.feature' version='3.7.0.v201505141512'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.xml_ui.feature_3.7.0.v201505141512/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.xml_ui.feature_3.7.0.v201505141512'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wst.xsl.feature' version='1.3.401.v201409111855'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.wst.xsl.feature_1.3.401.v201409111855/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.wst.xsl.feature_1.3.401.v201409111855'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.ecf.core.feature' version='1.1.0.v20150512-1727'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/Users/helin/OneDrive/Ambiente%20de%20Trabalho/Sistema%20Financeiro/IDE/eclipse/features/org.eclipse.ecf.core.feature_1.1.0.v20150512-1727/'/>
+        <property name='file.name' value='C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\IDE\eclipse\features\org.eclipse.ecf.core.feature_1.1.0.v20150512-1727'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

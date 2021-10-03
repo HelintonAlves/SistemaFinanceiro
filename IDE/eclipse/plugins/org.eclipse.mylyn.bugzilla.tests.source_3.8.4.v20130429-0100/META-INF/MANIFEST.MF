@@ -1,0 +1,124 @@
+Manifest-Version: 1.0
+Build-Jdk: 1.6.0_21
+Eclipse-SourceBundle: org.eclipse.mylyn.bugzilla.tests;version="3.8.4.
+ v20130429-0100";roots:="."
+Bundle-Vendor: %bundleVendor
+Bundle-Localization: OSGI-INF/l10n/bundle-src
+Bundle-Name: %bundleName
+Built-By: hudsonbuild
+Bundle-SymbolicName: org.eclipse.mylyn.bugzilla.tests.source
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Bundle-Version: 3.8.4.v20130429-0100
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaTaskCompletionTest
+ .java
+SHA1-Digest: 7QVG7SLuOTrvoR7R4hm58cnbtsw=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaVersionTest.java
+SHA1-Digest: WKF2v3f6FclaDD+DxK4eE2rhIuo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/RepositoryReportFactoryTest.jav
+ a
+SHA1-Digest: nRakM0kx+tTqd42fVJxcvWei4GQ=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaTaskEditorTest.java
+SHA1-Digest: an50iwRkYgYgc5EBlHhw1kxiRrE=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaSearchTest.java
+SHA1-Digest: EdNuO1rijOksnrZaa6+/Gk3miIo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaAttachmentHandlerTest.j
+ ava
+SHA1-Digest: VuoKk+5XKsPDktovuZNac/Gh46c=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaXmlRpcClientTest.j
+ ava
+SHA1-Digest: znNS3U3bPm9lpHx6Vs87Vt6HXTI=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaRepositoryConnectorTest
+ .java
+SHA1-Digest: R4myd+se596Qb3svgJylciZvUbw=
+
+Name: org/eclipse/mylyn/bugzilla/tests/AbstractBugzillaTest.java
+SHA1-Digest: xeE/Ww+muvIhO78ONdTUC4j76yA=
+
+Name: OSGI-INF/l10n/bundle-src.properties
+SHA1-Digest: m0N5VEbLv4tSwRNs6ZwgfBNY19Y=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaRepositoryConnecto
+ rStandaloneTest.java
+SHA1-Digest: Jq3TI7wGPx0Pg5/15uqOqwQDcQw=
+
+Name: org/eclipse/mylyn/bugzilla/tests/support/BugzillaFixture.java
+SHA1-Digest: mwEXD6EOxn9JZwXWXIw1DpTxoQQ=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaCustomFieldsTest.j
+ ava
+SHA1-Digest: yss2YfIQOa+XknPxhAHKQAfRtEY=
+
+Name: org/eclipse/mylyn/bugzilla/tests/AllBugzillaHeadlessStandaloneTe
+ sts.java
+SHA1-Digest: g7M0uSJH4aAhnOpi55gUsrIDBYM=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaRepositorySettingsPa
+ geTest.java
+SHA1-Digest: 1w679j3D9mA1W2Vqp/WHtwHONHc=
+
+Name: org/eclipse/mylyn/bugzilla/tests/AllBugzillaTests.java
+SHA1-Digest: JRzGXngSZ64wA4tvx83F4yHOmvk=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaTaskHyperlinkDetecto
+ rTest.java
+SHA1-Digest: ZX2Eec+TUXWNBVrATHl9OzChvKU=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaSearchPageTest.java
+SHA1-Digest: iYo5gmd1wElVd/a9leMuVKPdzIg=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaRepositoryConnectorTest
+ WithGuest.java
+SHA1-Digest: h1/HVFiHlgABMThzJvqdlRq2uys=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaConfigurationTest.
+ java
+SHA1-Digest: caD8Y+PTc0/mZhCbFeDshDt4ouE=
+
+Name: about.html
+SHA1-Digest: tbAP97WduhuCJ+f5zkndJKMe6vc=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaRepositoryConnecto
+ rConfigurationTest.java
+SHA1-Digest: ScHfDQVleOeRvQ/CvG5IXXhyNN0=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaCustomRepositoryTest.ja
+ va
+SHA1-Digest: aHpa+91bGo1YiluDvDgTWaylsaI=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaFlagsTest.java
+SHA1-Digest: gj9uws8w88VM5hY6H19/wpiPTwo=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaTaskDataHandlerTest.jav
+ a
+SHA1-Digest: oDHOe99lNekFelqQxT5r50dwvPE=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaClientTest.java
+SHA1-Digest: ndEs/7tUMM6/NHWqMv5GlEm7Wdw=
+
+Name: org/eclipse/mylyn/bugzilla/tests/EncodingTest.java
+SHA1-Digest: MW4itrQ5lpzxamtTN1wA6ZCpGyc=
+
+Name: org/eclipse/mylyn/bugzilla/tests/ui/BugzillaHyperlinkDetectorTes
+ t.java
+SHA1-Digest: 7P0LBcwsOOXgOEba5M2NjyFk5D8=
+
+Name: org/eclipse/mylyn/bugzilla/tests/BugzillaDateTimeTests.java
+SHA1-Digest: P+jexbzeffRoUT1u9IkvmGojcS0=
+
+Name: org/eclipse/mylyn/bugzilla/tests/core/BugzillaAttributeMapperTes
+ t.java
+SHA1-Digest: 3iP3AkkT20XcD4uCXiCHJed4lfo=
+

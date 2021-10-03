@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.mylyn.docs.epub.sdk"
+      label="%featureName"
+      version="3.2.0.v20161129-1925"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.docs.epub.core">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.mylyn.docs.epub"
+         version="3.2.0.v20161129-1925"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.core.source"
+         download-size="268"
+         install-size="1532"
+         version="3.2.0.v20161129-1925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.help.source"
+         download-size="1"
+         install-size="1"
+         version="2.1.0.v20161129-1925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.ui.source"
+         download-size="12"
+         install-size="29"
+         version="2.1.0.v20161129-1925"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.tika.core"
+         download-size="493"
+         install-size="1064"
+         version="1.3.0.v201505121915"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.tika.parsers"
+         download-size="505"
+         install-size="1014"
+         version="1.3.0.v201605180015"
+         unpack="false"/>
+
+</feature>

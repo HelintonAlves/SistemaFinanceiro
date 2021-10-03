@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+C:\Users\helin\OneDrive\Ambiente de Trabalho\Sistema Financeiro\Workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2108773135.index
+3213687042.index
+3153503906.index
+4117870683.index
+2640441276.index
+3062948782.index

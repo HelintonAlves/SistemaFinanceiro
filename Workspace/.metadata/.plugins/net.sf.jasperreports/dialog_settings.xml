@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.jaspersoft.studio.server.publish.wizard.Publish2ServerWizard">
+		<item value="857" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="0" key="dialogY"/>
+		<item value="255" key="dialogX"/>
+		<item value="728" key="dialogHeight"/>
+		<item value="857" key="dialogWidth"/>
+		<item value="728" key="DIALOG_HEIGHT"/>
+		<item value="263" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.model.image.command.dialog.ImageCreationDialog">
+		<item value="513" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="0" key="dialogY"/>
+		<item value="427" key="dialogX"/>
+		<item value="575" key="dialogHeight"/>
+		<item value="513" key="dialogWidth"/>
+		<item value="575" key="DIALOG_HEIGHT"/>
+		<item value="435" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.data.sql.dialogs.EditExpressionDialog">
+		<item value="794" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="148" key="dialogY"/>
+		<item value="286" key="dialogX"/>
+		<item value="325" key="dialogHeight"/>
+		<item value="794" key="dialogWidth"/>
+		<item value="325" key="DIALOG_HEIGHT"/>
+		<item value="24" key="DIALOG_X_ORIGIN"/>
+		<item value="148" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.property.color.chooser.ColorDialog">
+		<item value="618" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="70" key="dialogY"/>
+		<item value="374" key="dialogX"/>
+		<item value="442" key="dialogHeight"/>
+		<item value="618" key="dialogWidth"/>
+		<item value="442" key="DIALOG_HEIGHT"/>
+		<item value="382" key="DIALOG_X_ORIGIN"/>
+		<item value="78" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog">
+		<item value="843" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="0" key="dialogY"/>
+		<item value="262" key="dialogX"/>
+		<item value="728" key="dialogHeight"/>
+		<item value="843" key="dialogWidth"/>
+		<item value="728" key="DIALOG_HEIGHT"/>
+		<item value="270" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.property.descriptor.expression.dialog.JRExpressionEditor">
+		<item value="750" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="0" key="dialogY"/>
+		<item value="308" key="dialogX"/>
+		<item value="680" key="dialogHeight"/>
+		<item value="750" key="dialogWidth"/>
+		<item value="680" key="DIALOG_HEIGHT"/>
+		<item value="316" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.data.sql.dialogs.FromTableColumnsDialog">
+		<item value="650" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="0" key="dialogY"/>
+		<item value="358" key="dialogX"/>
+		<item value="728" key="dialogHeight"/>
+		<item value="650" key="dialogWidth"/>
+		<item value="728" key="DIALOG_HEIGHT"/>
+		<item value="72" key="DIALOG_X_ORIGIN"/>
+		<item value="-148" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

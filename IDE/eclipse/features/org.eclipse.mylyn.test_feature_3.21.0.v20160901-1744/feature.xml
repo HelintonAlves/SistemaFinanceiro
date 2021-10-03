@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2009, 2010 Tasktop Technologies and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+         Tasktop Technologies - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.mylyn.test_feature"
+      label="%featureName"
+      version="3.21.0.v20160901-1744"
+      plugin="org.eclipse.mylyn.tasks.core">
+
+   <description url="http://eclipse.org/mylyn">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.mylyn.sdk_feature" version="3.8.0"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.mylyn.bugzilla.tests"
+         download-size="286"
+         install-size="797"
+         version="3.21.0.v20160901-1744"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tasks.tests"
+         download-size="805"
+         install-size="1479"
+         version="3.21.0.v20160818-1734"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tests.util"
+         download-size="14"
+         install-size="26"
+         version="3.21.0.v20160630-2019"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.trac.tests"
+         download-size="94"
+         install-size="207"
+         version="3.21.0.v20160630-2019"/>
+
+   <plugin
+         id="org.eclipse.mylyn.bugzilla.tests.source"
+         download-size="72"
+         install-size="358"
+         version="3.21.0.v20160901-1744"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tasks.tests.source"
+         download-size="169"
+         install-size="648"
+         version="3.21.0.v20160818-1734"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tests.util.source"
+         download-size="8"
+         install-size="18"
+         version="3.21.0.v20160630-2019"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.trac.tests.source"
+         download-size="47"
+         install-size="164"
+         version="3.21.0.v20160630-2019"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tasks.core.tests"
+         download-size="21"
+         install-size="40"
+         version="3.21.0.v20160725-1617"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tasks.index.tests"
+         download-size="22"
+         install-size="45"
+         version="3.21.0.v20160630-2019"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.tasks.ui.tests"
+         download-size="74"
+         install-size="169"
+         version="3.21.0.v20160901-1744"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.trac.core.tests"
+         download-size="3"
+         install-size="5"
+         version="3.21.0.v20160630-2019"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.trac.ui.tests"
+         download-size="3"
+         install-size="4"
+         version="3.21.0.v20160630-2019"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

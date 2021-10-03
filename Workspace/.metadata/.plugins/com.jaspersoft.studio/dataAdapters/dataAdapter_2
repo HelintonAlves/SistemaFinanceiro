@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>Financeiro Data Adapter</name><driver>com.mysql.jdbc.Driver</driver><username>root</username><password/><savePassword>true</savePassword><url>jdbc:mysql://127.0.0.1:3306/financeiro</url><database/><serverAddress/></jdbcDataAdapter>

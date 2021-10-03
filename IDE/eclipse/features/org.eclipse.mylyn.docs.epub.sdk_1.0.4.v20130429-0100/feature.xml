@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.mylyn.docs.epub.sdk"
+      label="%featureName"
+      version="1.0.4.v20130429-0100"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.docs.epub.core">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.mylyn.docs.epub"
+         version="1.0.4.v20130429-0100"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.ant.core.source"
+         download-size="18"
+         install-size="31"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.core.source"
+         download-size="255"
+         install-size="1453"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.help.source"
+         download-size="1"
+         install-size="1"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.docs.epub.ui.source"
+         download-size="14"
+         install-size="38"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+</feature>

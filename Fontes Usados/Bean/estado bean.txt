@@ -1,0 +1,144 @@
+package br.com.financeiro.Bean;
+
+import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import org.omnifaces.util.Messages;
+
+import br.com.financeiro.dao.EstadoDAO;
+import br.com.financeiro.domain.Estado;
+
+
+
+@SuppressWarnings("serial")
+@ManagedBean
+@ViewScoped
+public class EstadoBean implements Serializable {
+	private Estado estado;
+
+	public Estado getEstado() {
+		return estado;
+	}
+
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
+
+	public void novo() {
+		estado = new Estado();
+	}
+
+	public void salvar() {
+		try {
+			EstadoDAO estadoDAO = new EstadoDAO();
+			estadoDAO.salvar(estado);
+
+			novo();
+
+			Messages.addGlobalInfo("Estado salvo com sucesso");
+		} catch (RuntimeException erro) {
+			Messages.addGlobalError("Ocorreu um erro ao tentar salvar o estado");
+			erro.printStackTrace();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@PostConstruct
+	public void listar(){
+		try{
+			EstadoDAO estadoDAO = new EstadoDAO();
+			estados = estadoDAO.listar();
+		} catch (RuntimeException erro) {
+			Messages.addGlobalError("Ocorreu um erro ao tentar listar os estados");
+			erro.printStackTrace();
+		}
+	}
+
+
+
+
+
+
+
+
+BEAN EXCLUIR
+
+
+	public void excluir(ActionEvent evento) {
+		try {
+			estado = (Estado) evento.getComponent().getAttributes().get("estadoSelecionado");
+
+			EstadoDAO estadoDAO = new EstadoDAO();
+			estadoDAO.excluir(estado);
+			
+			estados = estadoDAO.listar();
+
+			Messages.addGlobalInfo("Estado removido com sucesso");
+		} catch (RuntimeException erro) {
+			Messages.addFlashGlobalError("Ocorreu um erro ao tentar remover o estado");
+			erro.printStackTrace();
+		}
+	}
+	
+
+
+
+
+
+
+DIALOGO DE CONFIRMAÇÃO DE EXCLUSAO
+<p:commandButton icon="ui-icon-trash"
+actionListener="#{estadoBean.excluir}"
+update=":mensagem">
+<p:confirm header="Confirmação" message="Deseja excluir o estado?"
+icon="ui-icon-alert" />
+<f:attribute name="estadoSelecionado" value="#{estado}" />
+</p:commandButton>
+
+
+
+
+
+BOTAO EDITAR
+<p:commandButton icon="ui-icon-pencil"
+						actionListener="#{estadoBean.editar}"
+						update=":formCadastro:pnCadastro"
+						oncomplete="PF('dialogo').show();">
+						<f:attribute name="estadoSelecionado" value="#{estado}" />
+					</p:commandButton>
+
+
+
+
+
+public void editar(ActionEvent evento){
+		estado = (Estado) evento.getComponent().getAttributes().get("estadoSelecionado");
+	}
+
+
+
+
+
+P CONFIRM DIALOG
+
+<p:confirmDialog global="true">
+				<p:commandButton value="Sim" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="Não" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+
+

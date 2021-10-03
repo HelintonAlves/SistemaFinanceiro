@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: ci_agent
+Created-By: Apache Maven 3.5.3
+Build-Jdk: 1.8.0_171
+
+Name: licenses/TIB_js-studiocomm_6.6.0_license.txt
+SHA-256-Digest: 7hpvvSMd1h8aQ0T64j09hyrWpJ1ztxPxwXkaOMTvCq0=
+
+Name: feature.xml
+SHA-256-Digest: JdKth0zLBloUkkYhV6cgGwkcqvaEQNSvxnLovN6aJ1Y=
+
+Name: licenses/TIB_js-studiocomm_eclipse_notices.zip
+SHA-256-Digest: pBvvGSnMzsN0jfzQAqbJLoLsVdfODcjcDRUbqz1KKbs=
+
+Name: feature.properties
+SHA-256-Digest: mfyEaJAaaNyHcbo4K8kuCy5SC0R7izmzF+r5jBAhXgQ=
+
+Name: license.html
+SHA-256-Digest: xa4ZGUCJx1c/pQtHa7bCHGJgSOa1usqWe7OxsUjEplw=
+

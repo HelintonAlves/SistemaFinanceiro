@@ -1,0 +1,45 @@
+ADD DEPENDENCIA JERSEY 
+
+<!-- Jersey -->
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.22.1</version>
+		</dependency>
+
+
+
+
+classe Financeiro Resource Config
+
+
+
+import javax.ws.rs.ApplicationPath;
+
+import org.glassfish.jersey.server.ResourceConfig;
+
+//http://localhost:8080/Financeiro/rest
+@ApplicationPath("rest")
+public class FinanceiroResourceConfig extends ResourceConfig {
+	public FinanceiroResourceConfig(){
+		packages("br.com.financeiro.service");
+	}
+}
+
+
+
+
+
+TESTE DO SERVICE
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+// http://localhost:8080/Financeiro/rest/financeiro
+@Path("financeiro")
+public class FinanceiroService {
+	@GET
+	public String exibir(){
+		return "Cursos de Hugo Vasconcelos";
+	}
+}

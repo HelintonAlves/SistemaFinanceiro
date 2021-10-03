@@ -1,0 +1,510 @@
+
+
+
+
+CLASSE FUNCIONARIO DAO
+
+
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.Order;
+
+import br.com.financeiro.domain.Funcionario;
+import br.com.financeiro.util.HibernateUtil;
+
+public class FuncionarioDAO extends GenericDAO<Funcionario>{
+	@SuppressWarnings("unchecked")
+	public List<Funcionario> listarOrdenado() {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		try {
+			Criteria consulta = sessao.createCriteria(Funcionario.class);
+			consulta.createAlias("pessoa", "p");
+			consulta.addOrder(Order.asc("p.nome"));
+			List<Funcionario> resultado = consulta.list();
+			return resultado;
+		} catch (RuntimeException erro) {
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+}
+
+
+
+
+
+VENDAS DAO
+
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import br.com.financeiro.domain.ItemVenda;
+import br.com.financeiro.domain.Venda;
+import br.com.financeiro.util.HibernateUtil;
+
+public class VendaDAO extends GenericDAO<Venda> {
+	public void salvar(Venda venda, List<ItemVenda> itensVenda){
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		Transaction transacao = null;
+
+		try {
+			transacao = sessao.beginTransaction();
+		
+			sessao.save(venda);
+			
+			for(int posicao = 0; posicao < itensVenda.size(); posicao++){
+				ItemVenda itemVenda = itensVenda.get(posicao);
+				itemVenda.setVenda(venda);
+				
+				sessao.save(itemVenda);
+			}
+			
+			transacao.commit();
+		} catch (RuntimeException erro) {
+			if (transacao != null) {
+				transacao.rollback();
+			}
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+}
+
+
+
+
+
+
+DOMINIO ITEM VENDA
+
+import java.math.BigDecimal;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+
+@Entity
+public class ItemVenda extends GenericDomain {
+	@Column(nullable = false)
+	private Short quantidade;
+	
+	@Column(nullable = false, precision = 7, scale = 2)
+	private BigDecimal precoParcial;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Produto produto;
+	
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Venda venda;
+
+	public Short getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Short quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public BigDecimal getPrecoParcial() {
+		return precoParcial;
+	}
+
+	public void setPrecoParcial(BigDecimal precoParcial) {
+		this.precoParcial = precoParcial;
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+
+	public Venda getVenda() {
+		return venda;
+	}
+	
+	public void setVenda(Venda venda) {
+		this.venda = venda;
+	}
+}
+
+
+
+
+
+
+
+BEAN VENDAS 
+
+package br.com.financeiro.Bean;
+
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.faces.event.ActionEvent;
+
+import org.omnifaces.util.Messages;
+
+import br.com.financeiro.dao.ClienteDAO;
+import br.com.financeiro.dao.FuncionarioDAO;
+import br.com.financeiro.dao.ProdutoDAO;
+import br.com.financeiro.dao.VendaDAO;
+import br.com.financeiro.domain.Cliente;
+import br.com.financeiro.domain.Funcionario;
+import br.com.financeiro.domain.ItemVenda;
+import br.com.financeiro.domain.Produto;
+import br.com.financeiro.domain.Venda;
+
+@SuppressWarnings("serial")
+@ManagedBean
+@ViewScoped
+public class VendaBean implements Serializable {
+	private Venda venda;
+
+	private List<Produto> produtos;
+	private List<ItemVenda> itensVenda;
+	private List<Cliente> clientes;
+	private List<Funcionario> funcionarios;
+
+	public Venda getVenda() {
+		return venda;
+	}
+
+	public void setVenda(Venda venda) {
+		this.venda = venda;
+	}
+
+	public List<Produto> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
+	}
+
+	public List<ItemVenda> getItensVenda() {
+		return itensVenda;
+	}
+
+	public void setItensVenda(List<ItemVenda> itensVenda) {
+		this.itensVenda = itensVenda;
+	}
+
+	public List<Cliente> getClientes() {
+		return clientes;
+	}
+
+	public void setClientes(List<Cliente> clientes) {
+		this.clientes = clientes;
+	}
+
+	public List<Funcionario> getFuncionarios() {
+		return funcionarios;
+	}
+
+	public void setFuncionarios(List<Funcionario> funcionarios) {
+		this.funcionarios = funcionarios;
+	}
+
+	@PostConstruct
+	public void novo() {
+		try {
+			venda = new Venda();
+			venda.setPrecoTotal(new BigDecimal("0.00"));
+
+			ProdutoDAO produtoDAO = new ProdutoDAO();
+			produtos = produtoDAO.listar("descricao");
+
+			itensVenda = new ArrayList<>();
+		} catch (RuntimeException erro) {
+			Messages.addGlobalError("Ocorreu um erro ao tentar carregar a tela de vendas");
+			erro.printStackTrace();
+		}
+	}
+
+	public void adicionar(ActionEvent evento) {
+		Produto produto = (Produto) evento.getComponent().getAttributes().get("produtoSelecionado");
+
+		int achou = -1;
+		for (int posicao = 0; posicao < itensVenda.size(); posicao++) {
+			if (itensVenda.get(posicao).getProduto().equals(produto)) {
+				achou = posicao;
+			}
+		}
+
+		if (achou < 0) {
+			ItemVenda itemVenda = new ItemVenda();
+			itemVenda.setPrecoParcial(produto.getPreco());
+			itemVenda.setProduto(produto);
+			itemVenda.setQuantidade(new Short("1"));
+
+			itensVenda.add(itemVenda);
+		} else {
+			ItemVenda itemVenda = itensVenda.get(achou);
+			itemVenda.setQuantidade(new Short(itemVenda.getQuantidade() + 1 + ""));
+			itemVenda.setPrecoParcial(produto.getPreco().multiply(new BigDecimal(itemVenda.getQuantidade())));
+		}
+
+		calcular();
+	}
+
+	public void remover(ActionEvent evento) {
+		ItemVenda itemVenda = (ItemVenda) evento.getComponent().getAttributes().get("itemSelecionado");
+
+		int achou = -1;
+		for (int posicao = 0; posicao < itensVenda.size(); posicao++) {
+			if (itensVenda.get(posicao).getProduto().equals(itemVenda.getProduto())) {
+				achou = posicao;
+			}
+		}
+
+		if (achou > -1) {
+			itensVenda.remove(achou);
+		}
+
+		calcular();
+	}
+
+	public void calcular() {
+		venda.setPrecoTotal(new BigDecimal("0.00"));
+
+		for (int posicao = 0; posicao < itensVenda.size(); posicao++) {
+			ItemVenda itemVenda = itensVenda.get(posicao);
+			venda.setPrecoTotal(venda.getPrecoTotal().add(itemVenda.getPrecoParcial()));
+		}
+	}
+
+	public void finalizar() {
+		try {
+			venda.setHorario(new Date());
+			venda.setCliente(null);
+			venda.setFuncionario(null);
+			
+			FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+			funcionarios = funcionarioDAO.listarOrdenado();
+
+			ClienteDAO clienteDAO = new ClienteDAO();
+			clientes = clienteDAO.listarOrdenado();
+		} catch (RuntimeException erro) {
+			Messages.addGlobalError("Ocorreu um erro ao tentar finalizar a venda");
+			erro.printStackTrace();
+		}
+	}
+
+	public void salvar() {
+		try {
+			if(venda.getPrecoTotal().signum() == 0){
+				Messages.addGlobalError("Informe pelo menos um item para a venda");
+				return;
+			}
+			
+			VendaDAO vendaDAO = new VendaDAO();
+			vendaDAO.salvar(venda, itensVenda);
+			
+			venda = new Venda();
+			venda.setPrecoTotal(new BigDecimal("0.00"));
+
+			ProdutoDAO produtoDAO = new ProdutoDAO();
+			produtos = produtoDAO.listar("descricao");
+
+			itensVenda = new ArrayList<>();
+			
+			Messages.addGlobalInfo("Venda realizada com sucesso");
+		} catch (RuntimeException erro) {
+			Messages.addGlobalError("Ocorreu um erro ao tentar salvar a venda");
+			erro.printStackTrace();
+		}
+	}
+}}
+
+
+
+
+
+
+
+
+
+
+
+XHTML VENDAS
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Produtos</title>
+	<h:outputStylesheet library="css" name="estilo.css" />
+</h:head>
+
+<h:body>
+	<p:growl id="mensagem" />
+
+	<h:form id="formulario">
+		<p:panel header="Produtos">
+			<p:dataTable id="tabelaProduto"
+				emptyMessage="Nenhum registro encontrado." paginator="true"
+				value="#{vendaBean.produtos}" var="produto" rows="5"
+				paginatorPosition="bottom">
+
+				<p:column headerText="Descrição" filterBy="#{produto.descricao}"
+					sortBy="#{produto.descricao}">
+					<h:outputText value="#{produto.descricao}" />
+				</p:column>
+
+				<p:column headerText="Quantidade" sortBy="#{produto.quantidade}">
+					<h:outputText value="#{produto.quantidade}" />
+				</p:column>
+
+				<p:column headerText="Preço" sortBy="#{produto.preco}">
+					<h:outputText value="#{produto.preco}">
+						<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="Fornecedor"
+					filterBy="#{produto.fornecedor.descricao}"
+					sortBy="#{produto.fornecedor.descricao}">
+					<h:outputText value="#{produto.fornecedor.descricao}" />
+				</p:column>
+
+				<p:column headerText="Opções">
+					<p:commandButton icon="ui-icon-plus"
+						actionListener="#{vendaBean.adicionar}"
+						update=":formulario:tabelaCesta :formulario:painelFinalizacao">
+						<f:attribute name="produtoSelecionado" value="#{produto}" />
+					</p:commandButton>
+				</p:column>
+			</p:dataTable>
+		</p:panel>
+
+		<p:panel header="Cesta de Compras">
+			<p:dataTable id="tabelaCesta"
+				emptyMessage="Nenhum registro encontrado." paginator="true"
+				value="#{vendaBean.itensVenda}" var="itemVenda" rows="5"
+				paginatorPosition="bottom">
+
+				<p:column headerText="Descrição">
+					<h:outputText value="#{itemVenda.produto.descricao}" />
+				</p:column>
+
+				<p:column headerText="Preço Un.">
+					<h:outputText value="#{itemVenda.produto.preco}">
+						<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="Qtde.">
+					<h:outputText value="#{itemVenda.quantidade}" />
+				</p:column>
+
+				<p:column headerText="Preço Parcial">
+					<h:outputText value="#{itemVenda.precoParcial}">
+						<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="Opções">
+					<p:commandButton icon="ui-icon-minus"
+						actionListener="#{vendaBean.remover}"
+						update=":formulario:tabelaCesta :formulario:painelFinalizacao">
+						<f:attribute name="itemSelecionado" value="#{itemVenda}" />
+					</p:commandButton>
+				</p:column>
+			</p:dataTable>
+		</p:panel>
+
+		<p:panel header="Finalização">
+			<h:panelGrid id="painelFinalizacao" columns="3">
+				<p:outputLabel value="Total: R$" />
+				<h:outputText value="#{vendaBean.venda.precoTotal}">
+					<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+				</h:outputText>
+				<p:commandButton value="Finalizar"
+					actionListener="#{vendaBean.finalizar}"
+					update=":mensagem :formularioFinalizar:painelFinalizar"
+					oncomplete="PF('dialogo').show();">
+					<f:actionListener
+						type="org.omnifaces.eventlistener.ResetInputAjaxActionListener" />
+				</p:commandButton>
+
+			</h:panelGrid>
+		</p:panel>
+	</h:form>
+
+	<p:dialog header="Finalizar Venda" widgetVar="dialogo"
+		draggable="false" resizable="false" modal="true" closable="false">
+		<h:form id="formularioFinalizar">
+			<h:panelGrid id="painelFinalizar" columns="2">
+				<p:outputLabel value="Horário: " />
+				<h:outputText value="#{vendaBean.venda.horario}">
+					<f:convertDateTime pattern="dd/MM/yyyy HH:mm" locale="pt_BR"
+						timeZone="America/Sao_Paulo" />
+				</h:outputText>
+
+				<p:outputLabel value="Total: R$" />
+				<h:outputText value="#{vendaBean.venda.precoTotal}">
+					<f:convertNumber locale="pt_BR" minFractionDigits="2" />
+				</h:outputText>
+
+				<p:outputLabel for="funcionario" value="Funcionário:" />
+				<p:selectOneMenu id="funcionario"
+					value="#{vendaBean.venda.funcionario}"
+					converter="omnifaces.SelectItemsConverter" filter="true"
+					filterMatchMode="contains" required="true"
+					requiredMessage="O campo Funcionário é obrigatório">
+					<f:selectItem noSelectionOption="true"
+						itemLabel="Selecione um funcionário" />
+					<f:selectItems value="#{vendaBean.funcionarios}" var="funcionario"
+						itemValue="#{funcionario}"
+						itemLabel="#{funcionario.pessoa.cpf} - #{funcionario.pessoa.nome}" />
+				</p:selectOneMenu>
+
+				<p:outputLabel value="Cliente:" />
+				<p:selectOneMenu value="#{vendaBean.venda.cliente}"
+					converter="omnifaces.SelectItemsConverter" filter="true"
+					filterMatchMode="contains">
+					<f:selectItem noSelectionOption="true"
+						itemLabel="Selecione um cliente" />
+					<f:selectItems value="#{vendaBean.clientes}" var="cliente"
+						itemValue="#{cliente}"
+						itemLabel="#{cliente.pessoa.cpf} - #{cliente.pessoa.nome}" />
+				</p:selectOneMenu>
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<p:commandButton value="Salvar" actionListener="#{vendaBean.salvar}"
+					update=":mensagem :formulario:tabelaProduto :formulario:tabelaCesta :formulario:painelFinalizacao"
+					oncomplete="PF('dialogo').hide();" />
+				<p:commandButton value="Fechar" oncomplete="PF('dialogo').hide();" />
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+</h:body>
+</html>

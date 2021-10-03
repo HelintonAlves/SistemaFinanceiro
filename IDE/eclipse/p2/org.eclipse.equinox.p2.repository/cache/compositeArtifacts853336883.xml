@@ -1,0 +1,15 @@
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name="Jaspersoft Studio Update Site"
+	type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"
+	version="1.0.0">
+	<properties size="2">
+		<property name="p2.compressed" value="true" />
+		<!-- get new time w/ date +%s000 -->
+		<property name="p2.timestamp" value="1359992102000" />
+	</properties>
+	<children size="1">
+		<child
+			location="https://jaspersoft.github.io/jaspersoftstudio/eclipse-plugin/updates/6.6.0/" />
+	</children>
+</repository>
+

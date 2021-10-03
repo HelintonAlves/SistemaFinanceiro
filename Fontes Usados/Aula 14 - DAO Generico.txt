@@ -1,0 +1,199 @@
+CLASSE DAO GENERICA
+
+public class GenericDAO<Entidade> {
+	public void salvar(Entidade entidade) {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		Transaction transacao = null;
+
+		try {
+			transacao = sessao.beginTransaction();
+			sessao.save(entidade);
+			transacao.commit();
+		} catch (RuntimeException erro) {
+			if (transacao != null) {
+				transacao.rollback();
+			}
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+
+
+
+
+DAO TESTE SALVAR ESTADO
+
+import org.junit.Test;
+
+
+
+public class EstadaoDAOTest {
+	@Test
+	public void salvar(){
+		Estado estado = new Estado();
+		estado.setNome("Rio Grande do Sul");
+		estado.setSigla("RS");
+		
+		EstadoDAO estadoDAO = new EstadoDAO();
+		estadoDAO.salvar(estado);
+	}
+}
+
+
+
+CAPTURAR CLASSE GENERICA
+
+public class GenericDAO<Entidade> {
+	private Class<Entidade> classe;
+
+	@SuppressWarnings("unchecked")
+	public GenericDAO() {
+		this.classe = (Class<Entidade>) ((ParameterizedType) getClass().getGenericSuperclass())
+				.getActualTypeArguments()[0];
+	}
+
+
+
+
+
+
+
+
+METODO LISTAR, buscar, EXCLUIR E EDITAR
+
+@SuppressWarnings("unchecked")
+	public List<Entidade> listar() {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		try {
+			Criteria consulta = sessao.createCriteria(classe);
+			List<Entidade> resultado = consulta.list();
+			return resultado;
+		} catch (RuntimeException erro) {
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+	
+	@SuppressWarnings("unchecked")
+	public Entidade buscar(Long codigo) {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		try {
+			Criteria consulta = sessao.createCriteria(classe);
+			consulta.add(Restrictions.idEq(codigo));
+			Entidade resultado = (Entidade) consulta.uniqueResult();
+			return resultado;
+		} catch (RuntimeException erro) {
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+	
+	public void excluir(Entidade entidade) {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		Transaction transacao = null;
+
+		try {
+			transacao = sessao.beginTransaction();
+			sessao.delete(entidade);
+			transacao.commit();
+		} catch (RuntimeException erro) {
+			if (transacao != null) {
+				transacao.rollback();
+			}
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+	
+	public void editar(Entidade entidade) {
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		Transaction transacao = null;
+
+		try {
+			transacao = sessao.beginTransaction();
+			sessao.update(entidade);
+			transacao.commit();
+		} catch (RuntimeException erro) {
+			if (transacao != null) {
+				transacao.rollback();
+			}
+			throw erro;
+		} finally {
+			sessao.close();
+		}
+	}
+
+
+
+
+TESTES DOS METODOS ACIMA
+
+@Test
+	@Ignore
+	public void listar() {
+		EstadoDAO estadoDAO = new EstadoDAO();
+		List<Estado> resultado = estadoDAO.listar();
+
+		System.out.println("Total de Registros Encontrados: " + resultado.size());
+
+		for (Estado estado : resultado) {
+			System.out.println(estado.getCodigo() + " - " + estado.getSigla() + " - " + estado.getNome());
+		}
+	}
+	
+	@Test
+	@Ignore
+	public void buscar(){
+		Long codigo = 3L;
+		
+		EstadoDAO estadoDAO = new EstadoDAO();
+		Estado estado = estadoDAO.buscar(codigo);
+		
+		if(estado == null){
+			System.out.println("Nenhum registro encontrado");
+		}else{
+			System.out.println("Registro encontrado:");
+			System.out.println(estado.getCodigo() + " - " + estado.getSigla() + " - " + estado.getNome());
+		}
+	}
+	
+	@Test
+	@Ignore
+	public void excluir(){
+		Long codigo = 9L;
+		EstadoDAO estadoDAO = new EstadoDAO();
+		Estado estado = estadoDAO.buscar(codigo);
+		
+		if(estado == null){
+			System.out.println("Nenhum registro encontrado");
+		}else{
+			estadoDAO.excluir(estado);
+			System.out.println("Registro removido:");
+			System.out.println(estado.getCodigo() + " - " + estado.getSigla() + " - " + estado.getNome());
+		}
+	}
+	
+	@Test
+	public void editar(){
+		Long codigo = 10L;
+		EstadoDAO estadoDAO = new EstadoDAO();
+		Estado estado = estadoDAO.buscar(codigo);
+		
+		if(estado == null){
+			System.out.println("Nenhum registro encontrado");
+		}else{
+			System.out.println("Registro editado - Antes:");
+			System.out.println(estado.getCodigo() + " - " + estado.getSigla() + " - " + estado.getNome());
+			
+			estado.setNome("Santa Catarina");
+			estado.setSigla("SC");
+			estadoDAO.editar(estado);
+			
+			System.out.println("Registro editado - Depois:");
+			System.out.println(estado.getCodigo() + " - " + estado.getSigla() + " - " + estado.getNome());
+		}
+	}

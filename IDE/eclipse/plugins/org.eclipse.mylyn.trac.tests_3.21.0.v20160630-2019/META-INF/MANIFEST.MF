@@ -1,0 +1,179 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Built-By: genie.mylyn
+Bundle-SymbolicName: org.eclipse.mylyn.trac.tests;singleton:=true
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/mylyn/
+ org.eclipse.mylyn.tasks.git;path="org.eclipse.mylyn.trac.tests";tag="
+ R_3_21_0";commitId=288789a96cd2c7017156b29118f3583f2b03affb
+Require-Bundle: org.junit;bundle-version="4.8.2",org.eclipse.core.runt
+ ime,org.eclipse.jface.text,org.eclipse.search,org.eclipse.ui,org.ecli
+ pse.ui.workbench.texteditor,org.eclipse.mylyn.commons.net,org.eclipse
+ .mylyn.commons.repositories.core,org.eclipse.mylyn.commons.sdk.util,o
+ rg.eclipse.mylyn.tasks.core,org.eclipse.mylyn.tasks.ui,org.eclipse.my
+ lyn.tests.util,org.eclipse.mylyn.trac.core,org.eclipse.mylyn.trac.ui,
+ org.apache.ws.commons.util;bundle-version="1.0.0",org.apache.xmlrpc;b
+ undle-version="3.0.0",org.eclipse.ui.forms,org.apache.commons.lang;bu
+ ndle-version="2.4.0"
+Export-Package: org.eclipse.mylyn.trac.tests;x-internal:=true,org.ecli
+ pse.mylyn.trac.tests.client;x-internal:=true,org.eclipse.mylyn.trac.t
+ ests.core;x-internal:=true,org.eclipse.mylyn.trac.tests.support;x-int
+ ernal:=true,org.eclipse.mylyn.trac.tests.ui;x-internal:=true
+Bundle-Version: 3.21.0.v20160630-2019
+Build-Jdk: 1.8.0_102
+Bundle-Vendor: Eclipse Mylyn
+Bundle-Name: Mylyn Trac Connector Tests
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.0.5
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/mylyn/trac/tests/client/TracXmlRpcClientTest.class
+SHA1-Digest: u5SRhKAFoCODSibnFTH5TmJW3Ao=
+
+Name: org/eclipse/mylyn/trac/tests/support/TracHarness.class
+SHA1-Digest: 5meNSuUvc/UZCzoiGAtCL9lIdPY=
+
+Name: org/eclipse/mylyn/trac/tests/support/TracTestCleanupUtil$TracTes
+ tCleanupUtil4.class
+SHA1-Digest: rOkm5kNn/v6WFiVS702AmRCOJ7o=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracClientProxyTest.class
+SHA1-Digest: gFV3OMeE7pm5M2XjMTXdrNhLF/E=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracXmlRpcClientTest$1.class
+SHA1-Digest: Dj1uzH6zjfGCU/hqoJFkiGWmxsI=
+
+Name: org/eclipse/mylyn/trac/tests/support/TestProxy.class
+SHA1-Digest: luzZtD/Obe80MNF07B3UVjRIx54=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracClientProxyTest$1.class
+SHA1-Digest: 2yx0JP/oLLVtV4/cFJuKoTsftfU=
+
+Name: org/eclipse/mylyn/trac/tests/EmptyTest.class
+SHA1-Digest: gGM6hoDF6owSVdqQeiowCG+eQiw=
+
+Name: org/eclipse/mylyn/trac/tests/support/XmlRpcServer$Ticket.class
+SHA1-Digest: Y7eW0KOfH13kB8v35e0bOG8ZZv8=
+
+Name: org/eclipse/mylyn/trac/tests/support/TestProxy$Message.class
+SHA1-Digest: 87Rx93fHnTl84JraSyWLLLFBdAQ=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracRepositoryQueryTest.class
+SHA1-Digest: fDDdFZzoVtoQ8UULw04rEef/LTk=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracClientTest.class
+SHA1-Digest: 3Ka/b1dJMBnQTj91gO//evnmbQU=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracTicketTest.class
+SHA1-Digest: HITJnv0rrJA+xva547JzGvw8K6g=
+
+Name: org/eclipse/mylyn/trac/tests/ui/TracRepositorySettingsPageTest$M
+ yTracRepositorySettingsPage.class
+SHA1-Digest: XgsdXa8ShGXd8cg/LZ67No77hy0=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracXmlRpcTest.class
+SHA1-Digest: WRPPzmULeQtMhSH/MU+tfG50+BM=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracClientManagerTest.class
+SHA1-Digest: E4oukglCerk+U4qIG1hC1xwjVdk=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracRepositoryConnectorTest.cl
+ ass
+SHA1-Digest: sWuRBN/pZDQnRbBDfmDleloTuNE=
+
+Name: org/eclipse/mylyn/trac/tests/support/XmlRpcServer$AbstractTracIt
+ em.class
+SHA1-Digest: JDZNVqZaQVPUqK88S2cy5Jg4anY=
+
+Name: org/eclipse/mylyn/trac/tests/ui/TracRepositorySettingsPageTest.c
+ lass
+SHA1-Digest: 2hgaUuIz3LwkLpibSGWEfS5di30=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracAttachmentHandlerTest.clas
+ s
+SHA1-Digest: PO+OtZEkFyeerwMfkVh1K61rTGM=
+
+Name: org/eclipse/mylyn/trac/tests/support/TracFixture.class
+SHA1-Digest: vBXGnGMT+BGWs9EGo4I32foRibQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracTaskDataHandlerXmlRpcTest.
+ class
+SHA1-Digest: xyRvJra0fOg51ilSSxw4kHcu8gk=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracClientFactoryTest.class
+SHA1-Digest: L2X4WCewXEORfMxRELCT3n7EsBg=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracRepositoryInfoTest.class
+SHA1-Digest: SK0MFINLlpWtLuFRlBMkALMEx9E=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracClientTest$1.class
+SHA1-Digest: iQODhneJJiWEwvA2nsqYZWCeVW8=
+
+Name: org/eclipse/mylyn/trac/tests/support/XmlRpcServer$TestData.class
+SHA1-Digest: Ga1SV3jBBqbbqnKy59udzuUvJoE=
+
+Name: org/eclipse/mylyn/trac/tests/support/XmlRpcServer.class
+SHA1-Digest: kGYYKUzGHPqAx+AcK71Xh6x2woo=
+
+Name: about.html
+SHA1-Digest: tbAP97WduhuCJ+f5zkndJKMe6vc=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracRepositoryConnectorTest$1.
+ class
+SHA1-Digest: Mb+F7qBDg6l8k5PuuxD1qGf2D5o=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracRepositoryConnectorWebTest
+ .class
+SHA1-Digest: +EdXXks+AP4UmGEmObA6FNgUREE=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracRepositoryConnectorTest$2.
+ class
+SHA1-Digest: nn7iy1IfZRuQfuoDW/6n67r/3ZM=
+
+Name: org/eclipse/mylyn/trac/tests/support/TracTestCleanupUtil.class
+SHA1-Digest: jJ0lsLgpx53qUFMlW/MjqOpnyBM=
+
+Name: org/eclipse/mylyn/trac/tests/support/TracTestUtil.class
+SHA1-Digest: m6zfX3+C1ObyZyyS7KPV8lKkURw=
+
+Name: org/eclipse/mylyn/trac/tests/ui/TracRepositorySettingsPageTest$1
+ .class
+SHA1-Digest: 69h6s0JPPvL8jQTAlOaCBJbdJ/g=
+
+Name: org/eclipse/mylyn/trac/tests/support/TracFixture$1.class
+SHA1-Digest: 4avQOwIbc17xXI+9yp8JGIMUuWE=
+
+Name: org/eclipse/mylyn/trac/tests/support/XmlRpcServer$ModelEnum.clas
+ s
+SHA1-Digest: zhUhrh/jg7Ya0HwpX0Bx45SzfBg=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracTaskDataHandlerXmlRpcTest$
+ 1.class
+SHA1-Digest: GSGyuPZTd9XL6r2cHZbFdFgNC34=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracTaskDataHandlerXmlRpcTest$
+ 2.class
+SHA1-Digest: QSyCRlVwJTxKtqf5k9LQNlp1RYE=
+
+Name: org/eclipse/mylyn/trac/tests/client/TracSearchTest.class
+SHA1-Digest: P46x32aHwVOB4PWC1sBQArhYhug=
+
+Name: org/eclipse/mylyn/trac/tests/ui/TracHyperlinkUtilTest.class
+SHA1-Digest: OMz49ciGpXc3UchV79wLb9rwzEY=
+
+Name: org/eclipse/mylyn/trac/tests/AllTracTests.class
+SHA1-Digest: Jtk7ZyQkT2HntMyCeDYkAxNZEdA=
+
+Name: org/eclipse/mylyn/trac/tests/support/XmlRpcServer$TicketEnum.cla
+ ss
+SHA1-Digest: GXBeiOvp9Mo8TgUsKVaATx3HETw=
+
+Name: org/eclipse/mylyn/trac/tests/AllTracHeadlessStandaloneTests.clas
+ s
+SHA1-Digest: BtQGS9TrGeePTAILgHDMP9Ms50k=
+
+Name: org/eclipse/mylyn/trac/tests/core/TracUtilTest.class
+SHA1-Digest: neiI5pzObkCWQDnitCbXXa1KGuM=
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2010 Tasktop Technologies and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+         Tasktop Technologies - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.mylyn.builds.sdk"
+      label="%featureName"
+      version="1.0.4.v20130429-0100"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.builds.core">
+
+   <description url="http://eclipse.org/mylyn">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.mylyn.hudson"
+         version="1.0.4.v20130429-0100"/>
+
+   <includes
+         id="org.eclipse.mylyn.builds"
+         version="1.0.4.v20130429-0100"/>
+
+   <plugin
+         id="org.eclipse.mylyn.builds.core.source"
+         download-size="141"
+         install-size="714"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.builds.ui.source"
+         download-size="131"
+         install-size="335"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.hudson.core.source"
+         download-size="86"
+         install-size="243"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.hudson.ui.source"
+         download-size="8"
+         install-size="16"
+         version="1.0.4.v20130429-0100"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.gson"
+         download-size="196"
+         install-size="394"
+         version="2.1.0.v201203072145"
+         unpack="false"/>
+
+   <plugin
+         id="javax.xml.bind"
+         download-size="115"
+         install-size="224"
+         version="2.2.0.v201105210648"
+         unpack="false"/>
+
+   <plugin
+         id="javax.xml.stream"
+         download-size="38"
+         install-size="69"
+         version="1.0.1.v201004272200"
+         unpack="false"/>
+
+   <plugin
+         id="com.sun.xml.bind"
+         download-size="915"
+         install-size="2001"
+         version="2.2.0.v201105210647"
+         unpack="false"/>
+
+   <plugin
+         id="javax.xml"
+         download-size="232"
+         install-size="378"
+         version="1.3.4.v201005080400"
+         unpack="false"/>
+
+</feature>

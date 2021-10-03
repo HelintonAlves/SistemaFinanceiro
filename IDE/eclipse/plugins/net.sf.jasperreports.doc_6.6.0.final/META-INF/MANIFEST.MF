@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: net.sf.jasperreports.doc; singleton:=true
+Bundle-Name: JasperReports Documentation
+Bundle-Version: 6.6.0.final
+Archiver-Version: Plexus Archiver
+Built-By: ci_agent
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TIBCO Software Inc.
+Created-By: Apache Maven 3.5.3
+Build-Jdk: 1.8.0_171
+Eclipse-BundleShape: dir
+
+Name: plugin.xml
+SHA-256-Digest: ckWH2fSrp2demWFsIdIREnUdGghGZQuLnodJWe1ni+s=
+
+Name: META-INF/maven/com.jaspersoft.studio.community-edition/net.sf.ja
+ sperreports.doc/pom.xml
+SHA-256-Digest: 95RHDDet6K6s9CfBFoaJSBeaxVRfC0cZ0aaBW3c9I1w=
+
+Name: toc.xml
+SHA-256-Digest: xrDSIdv4/1MkqVDC9XHbyhv2I8N+gZaAR5vByD3+BN0=
+
+Name: doc.zip
+SHA-256-Digest: hIpfbTET0nRjYvnyvunzqonpYgzBGt79xxcZKVmAx/U=
+
+Name: pom.xml
+SHA-256-Digest: 95RHDDet6K6s9CfBFoaJSBeaxVRfC0cZ0aaBW3c9I1w=
+
+Name: META-INF/maven/com.jaspersoft.studio.community-edition/net.sf.ja
+ sperreports.doc/pom.properties
+SHA-256-Digest: v+D2MnJt6kKXzNpx3tn0NoAcLc8fElELC1Cj+d4ateM=
+
